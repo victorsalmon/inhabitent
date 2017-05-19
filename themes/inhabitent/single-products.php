@@ -1,0 +1,1 @@
+<!--When a single item is clicked on from the archive-products.php this template will load just one of them-->

@@ -1,0 +1,1 @@
+<!--The about page will go here and will be a subset of pages lacking a sidebar-->
