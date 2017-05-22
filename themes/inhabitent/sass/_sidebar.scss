@@ -1,0 +1,19 @@
+//Establish column layout with Flexbox
+.site-content{
+  display: flex;
+}
+.content-area{
+  flex: 3 1 0;
+  min-width: 400px;
+}
+.widget-area{
+  flex: 1 3 0;
+  max-width: 200px;
+}
+
+//Style sidebar
+.widget-area{
+  border-left: $border__width solid $border__color-solid;
+  margin: 0 $base__space-unit;
+  padding: $base__space-unit 2*$base__space-unit;
+}

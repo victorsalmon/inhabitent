@@ -33,7 +33,7 @@ function inhabitent_login_logo (){
 	echo '
 		<style type="text/css"> 
 			body.login div#login h1 a {
-				background-image: url(' . get_template_directory_uri() . '/images/inhabitent-logo-text-dark.svg);
+				background-image: url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg);
 				background-size: 300px 53px;
 				width: 300px;
 				height: 53px;

@@ -1,0 +1,53 @@
+//Single Journal Post 
+// .single-post{
+//   .entry-header{
+
+//   }
+// }
+//Static Background Images by Post
+  //Van Camping Photo Contest
+.type-post{
+  position: relative;
+}
+.entry-content{
+  p{
+    img{
+      position: absolute;
+    }
+  }
+}
+.entry-header{
+  background-size: cover;
+  height: 525px;
+  margin-top: 2*$base__space-unit;
+  margin-right: $base__space-unit;
+  position: relative;
+  .entry-meta, .entry-title{
+    color: white;
+    background-color: $color__brand-green;
+    position: absolute;
+    text-transform: uppercase;
+    line-height: 1.75*$base__space-unit;
+    width: 70%;
+  }
+  .entry-title {
+    font-size: 2.1rem;
+    padding: $base__space-unit/2 $base__space-unit;
+    top: $base__space-unit;
+  }
+  .entry-meta {
+    bottom: 0;
+    right: 0;
+  }
+  p{
+    img {
+      position: absolute;
+      width: cover;
+    }
+  }
+}
+.tag-vans {
+  .entry-header{
+    background-image: url('../../images/blog-photos/van-camper.jpg');
+  }
+}

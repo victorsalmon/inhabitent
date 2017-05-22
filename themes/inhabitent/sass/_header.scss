@@ -1,0 +1,34 @@
+/* Nav Bar is in _navigation.scss*/
+
+//Invisible accessible menu toggle that becomes visible on focus
+.menu-toggle{
+  position: absolute;
+  top: -100px;
+  &:focus{
+    top: 0;
+  }
+}
+/* Links */
+a {
+	color: $color__link;
+	text-decoration: none;
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.site-content {
+  padding-top: 3rem;
+}

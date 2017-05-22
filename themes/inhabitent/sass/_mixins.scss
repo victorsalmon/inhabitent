@@ -11,8 +11,8 @@
 	margin-right: auto;
 }
 
-@mixin desktop {
-  @media (max-width: $desk_res){
+@mixin mobile {
+  @media (max-width: $res__max-mobile){
     @content;
   }
 }

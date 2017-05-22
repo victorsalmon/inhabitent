@@ -1,0 +1,33 @@
+//Front Page SCSS
+.home {
+  a{
+	color: white;
+		&:visited{
+			color: white;
+		}
+	}
+	.main-navigation {
+		position: absolute;
+	}
+	.site-content{
+		padding-top: 0;
+	}
+  .site-branding {
+    display: none;
+  }
+  .hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url("../../images/home-hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    .logo-full {
+      background-image: url("../../images/logos/inhabitent-logo-full.svg");
+      width: 275px;
+      height: 275px;
+    }
+  }
+}

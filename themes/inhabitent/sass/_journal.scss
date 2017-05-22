@@ -1,0 +1,19 @@
+//Green tent and Green Nav Bar
+.blog, .single-post {
+	.main-navigation{
+ 		border-bottom: $border__width solid $border__color-solid;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .85) 0%, rgba(255,255,255, .85) 100%);
+		position: fixed;
+    z-index: 10;
+    .logo-tent {
+      background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+  	}
+		a{
+			color: $color__brand-green;
+			&:visited {
+				color: $color__brand-green;
+			}
+		}
+
+  }
+}
