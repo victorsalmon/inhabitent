@@ -22,6 +22,10 @@
   margin-top: 2*$base__space-unit;
   margin-right: $base__space-unit;
   position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+  }
   .entry-meta, .entry-title{
     color: white;
     background-color: $color__brand-green;
