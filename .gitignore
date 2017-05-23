@@ -1,14 +1,9 @@
-# Ignore everything in "wp-content" except these directories. #
+# Ignore everything in "wp-content" #
 /*
 
-!.gitignore
-!plugins/
-!themes/
-!uploads/
-!README.md
-
-# Ignore everything in "plugins" except certain plugins. #
+# Ignore everything in "plugins" #
 plugins/*
+
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
 
@@ -36,6 +31,14 @@ ehthumbs.db
 error_log
 access_log
 
+# Do Not Ignore #
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+
+# Ignore all plugins but functionality plugin #
 akismet
 contact-form-7
 debug-bar
@@ -43,3 +46,6 @@ query-monitor
 theme-check
 *.rar
 !red-functionality-master/
+
+# Ignore project files #
+project-04
