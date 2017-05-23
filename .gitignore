@@ -35,3 +35,11 @@ ehthumbs.db
 *.sqlite
 error_log
 access_log
+
+akismet
+contact-form-7
+debug-bar
+query-monitor
+theme-check
+*.rar
+!red-functionality-master/
