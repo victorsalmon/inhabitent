@@ -1,0 +1,13 @@
+.entry-footer {
+  .cat-links, .tags-links {
+    font-family: 'novecentosanswide';
+    margin-right: $base__space-unit;
+    text-transform: uppercase;
+    a {
+    color: $color__brand-green;
+      &:hover{
+        color: midnightblue;
+      }
+    }
+  }
+}

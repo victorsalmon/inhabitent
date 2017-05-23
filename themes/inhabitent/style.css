@@ -846,3 +846,12 @@ object {
 
 .tag-vans .entry-header {
   background-image: url("../../images/blog-photos/van-camper.jpg"); }
+
+.entry-footer .cat-links, .entry-footer .tags-links {
+  font-family: 'novecentosanswide';
+  margin-right: 1.5rem;
+  text-transform: uppercase; }
+  .entry-footer .cat-links a, .entry-footer .tags-links a {
+    color: #248A83; }
+    .entry-footer .cat-links a:hover, .entry-footer .tags-links a:hover {
+      color: midnightblue; }

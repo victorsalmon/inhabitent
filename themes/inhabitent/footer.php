@@ -4,9 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">

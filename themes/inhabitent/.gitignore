@@ -24,3 +24,5 @@ project-04
 # Ignore packages #
 # =============== #
 node_modules/
+
+!red-functionality-master/
