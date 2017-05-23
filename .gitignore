@@ -1,12 +1,6 @@
 # Ignore everything in "wp-content" #
 /*
 
-# Ignore everything in "plugins" #
-plugins/*
-
-!plugins/inhabitent-functionality/
-!plugins/business-hours-widget/
-
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
@@ -38,14 +32,11 @@ access_log
 !uploads/
 !README.md
 
-# Ignore all plugins but functionality plugin #
-akismet
-contact-form-7
-debug-bar
-query-monitor
-theme-check
-*.rar
-!red-functionality-master/
+# Ignore everything in "plugins" #
+plugins/*
+
+!plugins/inhabitent-functionality/
+!plugins/business-hours-widget/
 
 # Ignore project files #
 project-04
