@@ -24,13 +24,9 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
+    <h2> Our Story </h2>
+  <?php echo CFS ()->get(' out_story' );?>
+  echo CFS()->get( 'our_team' );
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 

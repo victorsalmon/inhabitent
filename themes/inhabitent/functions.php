@@ -97,12 +97,16 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 
 
-
 function inhabitent_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font-awesome-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array (), '4.7.0' );
-
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	$about_hero_url = CFS()->get( 'hero_image' );
+	$about_hero_style = ".custom-hero {
+		background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rbga(0,0,0,0.4) 100% ), url($about_hero_url) no-repeat center bottom;
+		background-size: cover;
+	}";
+	wp_add_inline_style ('inhabitent-style', $about_hero_style);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
