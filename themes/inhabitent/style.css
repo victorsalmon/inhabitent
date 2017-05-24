@@ -815,7 +815,7 @@ object {
   position: absolute; }
 
 .entry-header {
-  max-height: 525px;
+  height: 525px;
   margin-top: 3rem;
   margin-right: 1.5rem;
   overflow: hidden;
