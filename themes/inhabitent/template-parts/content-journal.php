@@ -1,4 +1,4 @@
-<?php
+  <?php
 /**
  * Template part for displaying single posts.
  *
@@ -8,10 +8,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+		<?php
+      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+    ?>
+	<header class="entry-header" style="background-image: url('<?php echo $thumb['0'];?>')">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -34,3 +34,4 @@
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
