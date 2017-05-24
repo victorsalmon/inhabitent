@@ -733,9 +733,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 .site-content {
   display: -ms-flexbox;
   display: flex; }
@@ -818,14 +815,11 @@ object {
   position: absolute; }
 
 .entry-header {
-  background-size: cover;
-  height: 525px;
+  max-height: 525px;
   margin-top: 3rem;
   margin-right: 1.5rem;
+  overflow: hidden;
   position: relative; }
-  .entry-header img {
-    height: 100%;
-    width: 100%; }
   .entry-header .entry-meta, .entry-header .entry-title {
     color: white;
     background-color: #248A83;
@@ -838,14 +832,10 @@ object {
     padding: 0.75rem 1.5rem;
     top: 1.5rem; }
   .entry-header .entry-meta {
-    bottom: 0;
     right: 0; }
   .entry-header p img {
     position: absolute;
     width: cover; }
-
-.tag-vans .entry-header {
-  background-image: url("../../images/blog-photos/van-camper.jpg"); }
 
 .entry-footer .cat-links, .entry-footer .tags-links {
   font-family: 'novecentosanswide';
