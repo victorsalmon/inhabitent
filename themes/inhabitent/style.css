@@ -811,10 +811,9 @@ object {
 .type-post {
   position: relative; }
 
-.entry-content p img {
-  position: absolute; }
-
 .entry-header {
+  background-size: cover;
+  background-position: center;
   height: 525px;
   margin-top: 3rem;
   margin-right: 1.5rem;
@@ -832,10 +831,8 @@ object {
     padding: 0.75rem 1.5rem;
     top: 1.5rem; }
   .entry-header .entry-meta {
+    bottom: 0;
     right: 0; }
-  .entry-header p img {
-    position: absolute;
-    width: cover; }
 
 .entry-footer .cat-links, .entry-footer .tags-links {
   font-family: 'novecentosanswide';

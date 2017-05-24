@@ -7,14 +7,9 @@
 .type-post{
   position: relative;
 }
-.entry-content{
-  p{
-    img{
-      position: absolute;
-    }
-  }
-}
 .entry-header{
+  background-size: cover;
+  background-position: center;
   height: 525px;
   margin-top: 2*$base__space-unit;
   margin-right: $base__space-unit;
@@ -34,12 +29,7 @@
     top: $base__space-unit;
   }
   .entry-meta {
+    bottom: 0;
     right: 0;
-  }
-  p{
-    img {
-      position: absolute;
-      width: cover;
-    }
   }
 }

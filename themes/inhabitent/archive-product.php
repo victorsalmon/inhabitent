@@ -25,7 +25,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content-product' );
 					
 					//Displays value of custom field 'price' from Products
 		      echo CFS()->get ( 'price' );
