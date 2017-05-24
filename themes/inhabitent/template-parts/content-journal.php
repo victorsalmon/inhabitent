@@ -9,7 +9,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php
+    if ( has_post_thumbnail() ) :	
       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+		endif;
     ?>
 	<header class="entry-header" style="background-image: url('<?php echo $thumb['0'];?>')">
 
