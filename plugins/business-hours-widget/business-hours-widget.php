@@ -1,24 +1,21 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   Widget_Name
- * @author    Your Name <email@example.com>
+ * @package   Business Hours Widget
+ * @author    Victor Salmon <victorsalmon@hotmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2015 Your Name or Company Name
+ * @link      http://github.com/victorsalmon/inhabitent
+ * @copyright 2017-05-25 Victor Salmon
  *
  * @wordpress-plugin
- * Plugin Name:       @TODO
- * Plugin URI:        @TODO
- * Description:       @TODO
+ * Plugin Name:       Inhabitent Business Hours Widget
+ * Plugin URI:        http://github.com/victorsalmon/inhabitent
+ * Description:       This business hours widget built for Inhabitent allows an unskilled wp-admin to change the business hours with minimal risk of damage.
  * Version:           1.0.0
- * Author:            @TODO
- * Author URI:        @TODO
+ * Author:            Victor Salmon
+ * Author URI:        http://github.com/victorsalmon/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -28,11 +25,9 @@ if ( ! defined ( 'ABSPATH' ) ) {
 	exit;
 }
 
-// TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+class Business_Hours_Widget extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
      *
      * Unique identifier for your widget.
      *
@@ -40,7 +35,7 @@ class Widget_Name extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'widget-name';
+    protected $widget_slug = 'business-hours-widget';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -51,13 +46,12 @@ class Widget_Name extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Widget Name',
+			'Business Hours Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'This business hours widgets allows wp-admins to update business hours with minimal risk of damage.'
 			)
 		);
 
@@ -98,7 +92,10 @@ class Widget_Name extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		// TODO: other fields go here...
+		$week = empty( $instance['week'] ) ? '' : apply_filters( 'widget_title', $instance['week'] );
+		$sat = empty( $instance['sat'] ) ? '' : apply_filters( 'widget_title', $instance['sat'] );
+		$sun = empty( $instance['sun'] ) ? '' : apply_filters( 'widget_title', $instance['sun'] );
+		// other fields go here...
 
 		ob_start();
 
@@ -127,7 +124,10 @@ class Widget_Name extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
+		$instance['week'] = strip_tags( $new_instance['week'] );
+		$instance['sat'] = strip_tags( $new_instance['sat'] );
+		$instance['sun'] = strip_tags( $new_instance['sun'] );
+		// Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
 
@@ -140,16 +140,22 @@ class Widget_Name extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
+		// Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
 				'title' => 'My Widget Title',
+				'week' => '',
+				'sat' => '',
+				'sun' => ''
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		// TODO: Store the rest of values of the widget in their own variables
+		$week = strip_tags( $instance['week'] );
+		$sat = strip_tags( $instance['sat'] );
+		$sun = strip_tags( $instance['sun'] );
+		// Store the rest of values of the widget in their own variables
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -158,7 +164,6 @@ class Widget_Name extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Widget_Name' );
+     register_widget( 'Business_Hours_Widget' );
 });

@@ -654,6 +654,9 @@ textarea {
   .widget select {
     max-width: 100%; }
 
+.days-of-week {
+  font-weight: 700; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }

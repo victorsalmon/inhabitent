@@ -18,19 +18,21 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-				<div class="product-gallery">
+
+			<div class="product-gallery">
 				<?php /* Start the Loop */ ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
+
 					<div class="product-panel">
 						<?php
 							get_template_part( 'template-parts/content', 'product' );
 							echo CFS()->get ( 'price' );
 						?>
 					</div>
-				<?php endwhile; ?>
 
-				</div>
+				<?php endwhile; ?>
+			</div>
 
 		<?php endif; ?>
 
