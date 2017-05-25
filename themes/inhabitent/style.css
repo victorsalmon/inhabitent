@@ -648,6 +648,43 @@ textarea {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.site-footer {
+  background-image: url("../../images/dark-wood.png");
+  background-size: cover; }
+
+.container-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .container-footer img {
+    max-width: 225px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem; }
+  .container-footer aside.widget {
+    padding-right: 3rem;
+    -ms-flex: 1 1 0px;
+        flex: 1 1 0;
+    min-width: 225px; }
+  .container-footer a, .container-footer p {
+    color: white; }
+  .container-footer h3 {
+    color: #d99054;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .container-footer i {
+    font-size: 1.2rem;
+    width: 25px; }
+
+.copyright {
+  color: white;
+  font-family: 'novecentosanswide';
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }

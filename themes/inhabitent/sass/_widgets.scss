@@ -1,15 +1,57 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+//Style Site-Footer, Sidebar/Widgetized Area 2
+.site-footer{
+	background-image: url("../../images/dark-wood.png");
+	background-size: cover;
+}
+.container-footer{
+	display: flex;
+	flex-wrap: wrap;
+	img{
+		max-width: 225px;
+		margin: 0 auto;
+		padding-top: $base__space-unit;
+		padding-right: $base__space-unit;
+	}
+	aside.widget{
+		padding-right: 2*$base__space-unit;
+		flex: 1 1 0;
+		min-width: 225px;
+	}
+	a, p{
+		color: white;
+	}
+	h3 {
+		color: $color__brand-orange;
+		font-size: 1.1rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	i{
+	font-size: 1.2rem;
+	width: 25px;
+	}
+}
+.copyright {
+	color: white;
+	font-family: 'novecentosanswide';
+	padding: $base__space-unit;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .widget {
 	margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
+/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
 
+//Style Business Widget
 .days-of-week {
 	font-weight: 700;
 }
