@@ -2,11 +2,14 @@
 
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying the main (archives) shop (custom post called product) page.
  *
  * @package RED_Starter_Theme
  */
 
+/* You will need to use pre_get_posts () to modify the query object before it runs the 
+main loop so you can change the number of posts and the order. Price will get echoed the
+usual CFS() way */
 get_header(); ?>
 
 	<div id="primary" class="content-area">

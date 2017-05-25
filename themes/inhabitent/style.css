@@ -775,6 +775,7 @@ object {
   position: absolute; }
 
 .home .site-content {
+  display: block;
   padding-top: 0; }
 
 .home .site-branding {
@@ -795,6 +796,72 @@ object {
     background-image: url("../../images/logos/inhabitent-logo-full.svg");
     width: 275px;
     height: 275px; }
+
+.home .blk-btn {
+  -ms-flex-align: center;
+      align-items: center;
+  bottom: 0.75rem;
+  border: 1px solid black;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9rem;
+  font-family: 'novecentosanswide';
+  height: 2.5rem;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0.75rem;
+  padding: 0.75rem 0.75rem;
+  position: absolute;
+  text-transform: uppercase;
+  width: 9rem; }
+  .home .blk-btn a {
+    color: black; }
+
+.home .blk-btn:hover {
+  background-color: #248A83; }
+  .home .blk-btn:hover a {
+    color: white; }
+
+.home h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.home .latest-entries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .home .latest-entries .image-container {
+    background-position: center;
+    background-size: cover;
+    height: 250px; }
+  .home .latest-entries .single-journal {
+    border: 1px solid #e1e1e1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    font-size: 0.75rem;
+    margin: 0 0.75rem;
+    position: relative;
+    width: 30%; }
+    .home .latest-entries .single-journal p {
+      margin-left: 0.75rem;
+      margin-bottom: 0.75rem; }
+    .home .latest-entries .single-journal h2 {
+      color: #248A83;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      margin-top: 0;
+      margin-left: 0.75rem;
+      padding-bottom: 3rem;
+      text-transform: uppercase; }
 
 .blog .main-navigation, .single-post .main-navigation {
   border-bottom: 1px solid #e1e1e1;

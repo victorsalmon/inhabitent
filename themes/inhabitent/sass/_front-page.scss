@@ -10,6 +10,7 @@
 		position: absolute;
 	}
 	.site-content{
+    display: block;
 		padding-top: 0;
 	}
   .site-branding {
@@ -28,6 +29,72 @@
       background-image: url("../../images/logos/inhabitent-logo-full.svg");
       width: 275px;
       height: 275px;
+    }
+  }
+  .blk-btn {
+    align-items: center;
+    bottom: $base__space-unit/2;
+    border: $border__width solid black;
+    display: flex;
+    font-size: .9rem;
+    font-family: 'novecentosanswide';
+    height: 2.5rem;
+    justify-content: center;
+    left: $base__space-unit/2;
+    padding: $base__space-unit/2 $base__space-unit/2;
+    position: absolute;
+    text-transform: uppercase;
+    width: 9rem;
+    a{
+      color: black;
+    }
+  }
+  .blk-btn:hover {
+    background-color: $color__brand-green;
+    a {
+      color: white;
+    }
+  }
+  //The Inhabitent Journal section
+  h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: $base__space-unit/2 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .latest-entries{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    .image-container{
+      background-position: center;
+      background-size: cover;
+      height: 250px;
+    }
+
+    .single-journal {
+      border: $border__width solid $border__color-solid;
+      display: flex;
+      flex-direction:column;
+      font-size: 0.75rem;
+      margin: 0 $base__space-unit/2;
+      position: relative;
+      width: 30%;
+      p{
+        margin-left: $base__space-unit/2;
+        margin-bottom: $base__space-unit/2;
+      }
+      h2{
+        color: $color__brand-green;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        margin-top: 0;
+        margin-left: $base__space-unit/2;
+        padding-bottom: 3rem;
+        text-transform: uppercase;
+      }
     }
   }
 }
