@@ -48,7 +48,7 @@
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 2px;
-    padding: $base__space-unit/2 0;
+    // padding: $base__space-unit/2 0;
     text-align: center;
     text-transform: uppercase;
   }
@@ -57,12 +57,38 @@
   }
 
   //The Shop Section
+  .product-info {
+    justify-content: center;
+  }
   .single-product-type{
+    align-items: center;
+    border: $border__width solid $border__color-solid;
+    border-top-width: 5px;
     display:flex;
     flex-direction:column;
+    margin: $base__space-unit/2;
+    text-align: center;
+    width: 22%;
+    &:hover{
+      border-color: $color__brand-orange;
+    }
     img {
-      height: 75px;
-      width: 75px;
+      height: 70px;
+      margin: $base__space-unit 0;
+      width: 70px;
+    }
+    .description{
+      margin: 0 $base__space-unit/2;
+    }
+    h3{
+      background-color: $color__brand-green;
+      color: white;
+      font-size: 1rem;
+      font-weight: 400;
+      padding: $base__space-unit/4 $base__space-unit;
+      &:hover{
+        background-color: $color__brand-green-dark;
+      }
     }
   }
 

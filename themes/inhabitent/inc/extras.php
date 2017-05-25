@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 /**
@@ -11,7 +11,17 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+
+function inhabitent_change_query_count_16 ($query){
+    if( ! is_admin() && is_main_query() && is_post_type_archive( 'product' ) ) {
+        $query->set('posts_per_page', '16');
+				$query->set('orderby', 'title');
+				$query->set('order', 'asc');
+    }
+}
+add_action('pre_get_posts', 'inhabitent_change_query_count_16');
+
+function inhabitent_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,7 +29,7 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'inhabitent_body_classes' );
 
 /* Remove Editor Menu Links in wp-admin menu */
 function inhabitent_remove_submenus() {
@@ -31,13 +41,13 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 /* Changes the url and style of the wp-admin login logo image */
 function inhabitent_login_logo (){
 	echo '
-		<style type="text/css"> 
+		<style type="text/css">
 			body.login div#login h1 a {
 				background-image: url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg);
 				background-size: 300px 53px;
 				width: 300px;
 				height: 53px;
-			} 
+			}
 		</style>';
 }
 add_action ( 'login_head', 'inhabitent_login_logo' );

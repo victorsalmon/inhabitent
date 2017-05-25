@@ -2,7 +2,7 @@
 /**
  * The journal/blog-post-index page template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

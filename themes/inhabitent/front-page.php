@@ -2,7 +2,7 @@
 /**
  * The front-page template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -21,9 +21,9 @@ get_header(); ?>
           <?php foreach ( $product_types as $product_type ) : ?>
             <div class="single-product-type">
               <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $product_type->slug; ?>.svg">
-              <span class="description"><?php echo $product_type->description;?> Stuff</h3></span>
+              <span class="description"><?php echo $product_type->description;?></h3></span>
               <a href="<?php echo get_term_link($product_type);?>">
-                <h3><?php echo $product_type->name;?></h3>
+                <h3><?php echo $product_type->name;?> Stuff</h3>
               </a>
             </div>
           <?php endforeach; ?>

@@ -2,7 +2,7 @@
 /**
  * The template for displaying a single product
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

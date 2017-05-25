@@ -2,7 +2,7 @@
 /**
  * The header template for the theme.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?><!DOCTYPE html>

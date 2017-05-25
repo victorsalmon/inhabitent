@@ -4,7 +4,7 @@
 /**
  * The template for displaying all pages.
  * Template Name: About Page
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
