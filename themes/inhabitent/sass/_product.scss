@@ -1,0 +1,10 @@
+.archive-product{
+  .product-gallery {
+    display:flex;
+    .product-panel{
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+    }
+  }
+}
