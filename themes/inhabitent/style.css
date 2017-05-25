@@ -354,6 +354,29 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+.blk-btn {
+  -ms-flex-align: center;
+      align-items: center;
+  bottom: 0.75rem;
+  border: 1px solid black;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9rem;
+  font-family: 'novecentosanswide';
+  height: 2.5rem;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0.75rem;
+  padding: 0.75rem 0.75rem;
+  position: absolute;
+  text-transform: uppercase;
+  width: 9rem; }
+
+.blk-btn:hover {
+  background-color: #248A83; }
+  .blk-btn:hover a {
+    color: white; }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -771,6 +794,11 @@ object {
   .home a:visited {
     color: white; }
 
+.home .blk-btn a {
+  color: black; }
+  .home .blk-btn a:hover {
+    color: white; }
+
 .home .main-navigation {
   position: absolute; }
 
@@ -797,31 +825,6 @@ object {
     width: 275px;
     height: 275px; }
 
-.home .blk-btn {
-  -ms-flex-align: center;
-      align-items: center;
-  bottom: 0.75rem;
-  border: 1px solid black;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: .9rem;
-  font-family: 'novecentosanswide';
-  height: 2.5rem;
-  -ms-flex-pack: center;
-      justify-content: center;
-  left: 0.75rem;
-  padding: 0.75rem 0.75rem;
-  position: absolute;
-  text-transform: uppercase;
-  width: 9rem; }
-  .home .blk-btn a {
-    color: black; }
-
-.home .blk-btn:hover {
-  background-color: #248A83; }
-  .home .blk-btn:hover a {
-    color: white; }
-
 .home h4 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -829,6 +832,19 @@ object {
   padding: 0.75rem 0;
   text-align: center;
   text-transform: uppercase; }
+
+.home .container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.home .single-product-type {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .home .single-product-type img {
+    height: 75px;
+    width: 75px; }
 
 .home .latest-entries {
   display: -ms-flexbox;

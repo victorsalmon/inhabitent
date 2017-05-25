@@ -1,6 +1,29 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+  .blk-btn {
+    align-items: center;
+    bottom: $base__space-unit/2;
+    border: $border__width solid black;
+    display: flex;
+    font-size: .9rem;
+    font-family: 'novecentosanswide';
+    height: 2.5rem;
+    justify-content: center;
+    left: $base__space-unit/2;
+    padding: $base__space-unit/2 $base__space-unit/2;
+    position: absolute;
+    text-transform: uppercase;
+    width: 9rem;
+  }
+ .blk-btn:hover {
+   background-color: $color__brand-green;
+   a {
+     color: white;
+   }
+ } 
+
+
 html {
 	box-sizing: border-box;
 	@include font-size(1);

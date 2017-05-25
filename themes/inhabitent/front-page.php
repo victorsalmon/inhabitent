@@ -20,11 +20,10 @@ get_header(); ?>
       if ( !empty($product_types) && !is_wp_error($product_types)) : ?>
           <?php foreach ( $product_types as $product_type ) : ?>
             <div class="single-product-type">
-              <!--<img src="<?php ?>"-->
-              <!--Put more markup here-->
-
+              <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $product_type->slug; ?>.svg">
+              <span class="description"><?php echo $product_type->description;?> Stuff</h3></span>
               <a href="<?php echo get_term_link($product_type);?>">
-                <h3><?php echo $product_type->name;?> Stuff</h3>
+                <h3><?php echo $product_type->name;?></h3>
               </a>
             </div>
           <?php endforeach; ?>
@@ -35,7 +34,7 @@ get_header(); ?>
 
 <!--The Journal Section-->
 <h4>Inhabitent Journal</h4>
-<section class="latest-entries">
+<section class="latest-entries container">
   <?php $args = array(
     // 'order' => 'ASC',
     'numberposts' => 3,

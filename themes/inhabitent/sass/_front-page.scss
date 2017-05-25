@@ -1,11 +1,20 @@
 //Front Page SCSS
 .home {
+  //Links and Nav
   a{
 	color: white;
 		&:visited{
 			color: white;
 		}
 	}
+  .blk-btn{
+    a{
+      color: black;
+      &:hover{
+        color: white;
+      }
+    }
+  }
 	.main-navigation {
 		position: absolute;
 	}
@@ -16,6 +25,8 @@
   .site-branding {
     display: none;
   }
+
+  //Hero Section
   .hero {
     align-items: center;
     display: flex;
@@ -31,31 +42,8 @@
       height: 275px;
     }
   }
-  .blk-btn {
-    align-items: center;
-    bottom: $base__space-unit/2;
-    border: $border__width solid black;
-    display: flex;
-    font-size: .9rem;
-    font-family: 'novecentosanswide';
-    height: 2.5rem;
-    justify-content: center;
-    left: $base__space-unit/2;
-    padding: $base__space-unit/2 $base__space-unit/2;
-    position: absolute;
-    text-transform: uppercase;
-    width: 9rem;
-    a{
-      color: black;
-    }
-  }
-  .blk-btn:hover {
-    background-color: $color__brand-green;
-    a {
-      color: white;
-    }
-  }
-  //The Inhabitent Journal section
+
+  //Section Setup: Headings and Containers
   h4{
     font-size: 2.5rem;
     font-weight: 400;
@@ -64,6 +52,21 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .container {
+    display: flex;
+  }
+
+  //The Shop Section
+  .single-product-type{
+    display:flex;
+    flex-direction:column;
+    img {
+      height: 75px;
+      width: 75px;
+    }
+  }
+
+  //The Inhabitent Journal Section
   .latest-entries{
     display:flex;
     flex-direction: row;
@@ -73,7 +76,6 @@
       background-size: cover;
       height: 250px;
     }
-
     .single-journal {
       border: $border__width solid $border__color-solid;
       display: flex;
@@ -96,5 +98,7 @@
         text-transform: uppercase;
       }
     }
+
+    //The Adventures Section
   }
 }
