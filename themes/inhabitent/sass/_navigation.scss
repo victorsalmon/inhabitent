@@ -1,16 +1,37 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-//Tent Logo
-.logo-tent {
-  background: url("../../images/logos/inhabitent-logo-tent-white.svg");
-  background-size: contain; 
-  height: 35px;
-	margin: 0.35rem;
-  width: 50px;
+//Green tent and Green Nav Bar
+.main-navigation{
+	border-bottom: $border__width solid $border__color-solid;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .85) 0%, rgba(255,255,255, .85) 100%);
+	position: fixed;
+	z-index: 10;
+	.logo-tent {
+		background-size: contain; 
+		height: 35px;
+		margin: 0.35rem;
+		width: 50px;
+		background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+	}
+	a{
+		color: $color__brand-green;
+		&:visited {
+			color: $color__brand-green;
+		}
+	}
 }
 
-
+.home{
+	.logo-tent { //White Logo and Bar
+		background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+	}
+	.menu-main-menu-container {
+		a{
+			color:white;
+		}
+	}
+}
 
 /* General Navigation Menu Styles */
 .main-navigation {

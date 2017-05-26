@@ -1,3 +1,33 @@
+.post-type-archive-product{
+  h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  //Product Types Nav Bar
+  h3{
+    font-size: 1.2rem;
+    font-weight: 400;  
+    margin: 0 $base__space-unit;
+    text-transform: uppercase;
+  }
+}
+.product-types{
+  display:flex;
+  border-bottom: $border__width dashed $border__color-dashed;
+  justify-content:center;
+  list-style: none;
+  padding-bottom: 1.5*$base__space-unit;
+  padding-left: 0;
+  margin-left: 0;
+  .list-product-type{
+    a{
+      color: $color__brand-green;
+    }
+  }
+}
+//Product Gallery Grid
 .archive-product{
   .product-gallery {
     display:flex;

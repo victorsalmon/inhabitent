@@ -43,6 +43,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 /* Nav Bar is in _navigation.scss*/
+.site-content {
+  padding-top: 3rem; }
+
+.main-navigation {
+  border-bottom: 1px solid #e1e1e1; }
+
 .menu-toggle {
   position: absolute;
   top: -100px; }
@@ -61,9 +67,6 @@ a {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
-
-.site-content {
-  padding-top: 3rem; }
 
 html {
   font-family: sans-serif;
@@ -507,12 +510,27 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.logo-tent {
-  background: url("../../images/logos/inhabitent-logo-tent-white.svg");
-  background-size: contain;
-  height: 35px;
-  margin: 0.35rem;
-  width: 50px; }
+.main-navigation {
+  border-bottom: 1px solid #e1e1e1;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
+  position: fixed;
+  z-index: 10; }
+  .main-navigation .logo-tent {
+    background-size: contain;
+    height: 35px;
+    margin: 0.35rem;
+    width: 50px;
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
+  .main-navigation a {
+    color: #248A83; }
+    .main-navigation a:visited {
+      color: #248A83; }
+
+.home .logo-tent {
+  background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
+
+.home .menu-main-menu-container a {
+  color: white; }
 
 /* General Navigation Menu Styles */
 .main-navigation {
@@ -949,18 +967,6 @@ object {
       padding-bottom: 3rem;
       text-transform: uppercase; }
 
-.blog .main-navigation, .single-post .main-navigation {
-  border-bottom: 1px solid #e1e1e1;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
-  position: fixed;
-  z-index: 10; }
-  .blog .main-navigation .logo-tent, .single-post .main-navigation .logo-tent {
-    background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
-  .blog .main-navigation a, .single-post .main-navigation a {
-    color: #248A83; }
-    .blog .main-navigation a:visited, .single-post .main-navigation a:visited {
-      color: #248A83; }
-
 .type-post {
   position: relative; }
 
@@ -997,6 +1003,30 @@ object {
     color: #248A83; }
     .entry-footer .cat-links a:hover, .entry-footer .tags-links a:hover {
       color: midnightblue; }
+
+.post-type-archive-product h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.post-type-archive-product h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 1.5rem;
+  text-transform: uppercase; }
+
+.product-types {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed #c8c8c8;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style: none;
+  padding-bottom: 2.25rem;
+  padding-left: 0;
+  margin-left: 0; }
+  .product-types .list-product-type a {
+    color: #248A83; }
 
 .archive-product .product-gallery {
   display: -ms-flexbox;
