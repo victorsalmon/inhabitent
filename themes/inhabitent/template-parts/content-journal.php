@@ -10,10 +10,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php
     if ( has_post_thumbnail() ) :	
-      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+			$thumb = $thumb['0'];
 		endif;
     ?>
-	<header class="entry-header" style="background-image: url('<?php echo $thumb['0'];?>')">
+	<header class="entry-header" style="background-image: url('<?php echo $thumb;?>')">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

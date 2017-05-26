@@ -1,9 +1,5 @@
 //Green tent and Green Nav Bar
 .blog, .single-post {
-	.blk-btn{
-		position: relative;
-		color: black;
-	}
 	.main-navigation{
  		border-bottom: $border__width solid $border__color-solid;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .85) 0%, rgba(255,255,255, .85) 100%);

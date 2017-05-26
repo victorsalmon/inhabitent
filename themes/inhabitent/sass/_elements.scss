@@ -18,11 +18,19 @@
   }
  .blk-btn:hover {
    background-color: $color__brand-green;
-   a {
+   a{
      color: white;
    }
  } 
-
+.blog, .single-post, .tax-product-type {
+	.blk-btn{
+		position: relative;
+		color: black;
+		}
+	.blk-btn:hover{
+		color:white;
+	}
+}
 
 html {
 	box-sizing: border-box;

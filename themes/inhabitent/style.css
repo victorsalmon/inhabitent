@@ -377,6 +377,13 @@ big {
   .blk-btn:hover a {
     color: white; }
 
+.blog .blk-btn, .single-post .blk-btn, .tax-product-type .blk-btn {
+  position: relative;
+  color: black; }
+
+.blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover {
+  color: white; }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -942,10 +949,6 @@ object {
       padding-bottom: 3rem;
       text-transform: uppercase; }
 
-.blog .blk-btn, .single-post .blk-btn {
-  position: relative;
-  color: black; }
-
 .blog .main-navigation, .single-post .main-navigation {
   border-bottom: 1px solid #e1e1e1;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
@@ -1004,3 +1007,6 @@ object {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 20%; }
+
+.dots {
+  background: url("dot.gif") repeat-x bottom; }
