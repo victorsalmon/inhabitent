@@ -22,7 +22,7 @@
 	}
 }
 
-//White 
+//White Nav Bar
 .home, .page-template-page-about{
 	.main-navigation{
 		border-bottom: 0;
@@ -37,6 +37,31 @@
 			color:white;
 		}
 	}
+	.open-the-search-form {
+	color: white;
+	}
+}
+
+//Pop-out Search Bar
+fieldset{
+  border: 0;
+}
+.search-field{
+	transition: right 0.2s;
+	position: absolute;
+	top: 0;
+	right: -15rem;
+}
+.search-field:focus{
+	transition: right 0.2s;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+input[type=search].show {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  width: 12rem;
 }
 
 /* General Navigation Menu Styles */

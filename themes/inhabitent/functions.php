@@ -118,6 +118,7 @@ function inhabitent_scripts() {
 	wp_enqueue_script( 
 		'inhabitent-nav-toggle', 
 		get_template_directory_uri() . '/js/nav-toggle.js',
+		array ('jquery'),
 		false,
 		true
 	);

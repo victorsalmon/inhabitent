@@ -526,16 +526,39 @@ textarea {
     .main-navigation a:visited {
       color: #248A83; }
 
-.home .main-navigation {
+.home .main-navigation, .page-template-page-about .main-navigation {
   border-bottom: 0;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
   position: relative; }
 
-.home .logo-tent {
+.home .logo-tent, .page-template-page-about .logo-tent {
   background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
 
-.home .menu-main-menu-container a {
+.home .menu-main-menu-container a, .page-template-page-about .menu-main-menu-container a {
   color: white; }
+
+.home .open-the-search-form, .page-template-page-about .open-the-search-form {
+  color: white; }
+
+fieldset {
+  border: 0; }
+
+.search-field {
+  transition: right 0.2s;
+  position: absolute;
+  top: 0;
+  right: -15rem; }
+
+.search-field:focus {
+  transition: right 0.2s;
+  position: relative;
+  top: 0;
+  right: 0; }
+
+input[type=search].show {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  width: 12rem; }
 
 /* General Navigation Menu Styles */
 .main-navigation {
@@ -1066,4 +1089,4 @@ object {
   border: 1px solid #e1e1e1; }
 
 .dots {
-  background: url("dot.gif") repeat-x bottom; }
+  background: url("../../images/dot.gif") repeat-x bottom; }
