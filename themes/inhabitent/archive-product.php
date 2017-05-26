@@ -7,8 +7,10 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
 		<header class="gallery-header">
-			<h1 class="page-title"> Shop Stuff </h1>
+			<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+
 			<ul class="product-types">
 				<?php 
 					$product_types = get_terms( 'product-type' ); 
@@ -24,6 +26,7 @@ get_header(); ?>
 			</ul>
 		</header> <!--Page Header-->
 
+		
 		<?php if ( have_posts() ) : ?>
 			<div class="product-gallery">
 				<?php /* Start the Loop */ ?>
