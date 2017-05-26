@@ -21,6 +21,7 @@ function inhabitent_change_query_count_16 ($query){
 }
 add_action('pre_get_posts', 'inhabitent_change_query_count_16');
 
+
 function inhabitent_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
@@ -31,12 +32,14 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
+
 /* Remove Editor Menu Links in wp-admin menu */
 function inhabitent_remove_submenus() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
 
 /* Changes the url and style of the wp-admin login logo image */
 function inhabitent_login_logo (){
@@ -52,6 +55,7 @@ function inhabitent_login_logo (){
 }
 add_action ( 'login_head', 'inhabitent_login_logo' );
 
+
 /* Changes the link of the wp-admin login logo image */
 function inhabitent_login_logo_url( $url ) {
 	//	return get_bloginfo( 'url' ); //this also works
@@ -59,11 +63,13 @@ function inhabitent_login_logo_url( $url ) {
 }
 add_filter ( 'login_headerurl', 'inhabitent_login_logo_url' );
 
+
 /* Changes the mouse-over pop-up title on the wp-admin logo image */
 function inhabitent_login_title() {
 	return 'Inhabitent Camping Supply Co.';
 }
 add_filter( 'login_headertitle', 'inhabitent_login_title' );
+
 
 function inhabitent_wp_trim_excerpt( $text ) {
 /**
@@ -113,6 +119,7 @@ function inhabitent_wp_trim_excerpt( $text ) {
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
 
+
 function inhabitent_about_img_update (){
 	if (is_page_template( 'page-about.php' )){
 		$thumb_url = CFS ()->get( 'hero_image' );
@@ -121,3 +128,18 @@ function inhabitent_about_img_update (){
 	}
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_update' );
+
+
+function inhabitent_archive_title($title)
+{
+	if (is_post_type_archive('product')) {
+		$title = "Shop Stuff";
+	} elseif (is_tax('product-type')){
+		$title = single_term_title( '', false);
+	}
+	return $title;
+}
+//Adds the filter to transform the data returned from the get_the_archive_title() function
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+

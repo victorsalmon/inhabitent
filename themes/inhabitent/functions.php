@@ -110,6 +110,18 @@ function inhabitent_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	//Enqueueing jQuery which is bundled with Wordpress
+	wp_enqueue_script( 'jquery' );
+
+	//Enqueueing my toggle-script which must be done within 'the theme_scripts' folder
+	wp_enqueue_script( 
+		'inhabitent-nav-toggle', 
+		get_template_directory_uri() . '/js/nav-toggle.js',
+		false,
+		true
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
@@ -121,4 +133,6 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
+
+
 require get_template_directory() . '/inc/extras.php';
