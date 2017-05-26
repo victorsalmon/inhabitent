@@ -1,6 +1,7 @@
 .post-type-archive-product{
   h1{
     font-size: 2.5rem;
+    padding-top: 0.50rem;
     text-align: center;
     text-transform: uppercase;
   }
@@ -10,6 +11,7 @@
     font-size: 1.2rem;
     font-weight: 400;  
     margin: 0 $base__space-unit;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
   }
 }
@@ -28,16 +30,31 @@
   }
 }
 //Product Gallery Grid
-.archive-product{
-  .product-gallery {
+.product-gallery {
     display:flex;
-    .product-panel{
-      display: flex;
-      flex-direction: column;
-      width: 20%;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+    .entry-content{
+      margin: $base__space-unit/2;
+      width: 22%;
+      min-width: 200px;
     }
-  }
 }
+//Product Small Single
+
+.product-image{
+  border: $border__width solid $border__color-solid;
+  border-bottom-width: 5px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+}
+.product-meta{
+  border: $border__width solid $border__color-solid;
+}
+
 
 //Single-Product
 .dots { 

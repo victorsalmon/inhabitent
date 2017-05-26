@@ -9,29 +9,39 @@
 .container-footer{
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 4rem;
 	img{
 		max-width: 225px;
 		margin: 0 auto;
-		padding-top: $base__space-unit;
-		padding-right: $base__space-unit;
 	}
 	aside.widget{
 		padding-right: 2*$base__space-unit;
 		flex: 1 1 0;
 		min-width: 225px;
 	}
-	a, p{
+	p{
 		color: white;
 	}
-	h3 {
-		color: $color__brand-orange;
-		font-size: 1.1rem;
-		letter-spacing: 2px;
-		text-transform: uppercase;
+	a{
+		color: white;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 	i{
 	font-size: 1.2rem;
 	width: 25px;
+	}
+}
+.site-footer{
+	.container-footer{
+		h3 {
+			color: $color__brand-orange;
+			font-size: 1.1rem;
+			letter-spacing: 2px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
 	}
 }
 .copyright {
