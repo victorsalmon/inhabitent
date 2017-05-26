@@ -112,3 +112,12 @@ function inhabitent_wp_trim_excerpt( $text ) {
 }
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
+
+function inhabitent_about_img_update (){
+	if (is_page_template( 'page-about.php' )){
+		$thumb_url = CFS ()->get( 'hero_image' );
+		$custom_style = ".entry-header {background-image: url('" . $thumb_url . "')}";
+		wp_add_inline_style( 'inhabitent-style', $custom_style );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_update' );

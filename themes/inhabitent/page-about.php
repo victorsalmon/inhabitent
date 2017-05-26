@@ -11,12 +11,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php
-    if ( has_post_thumbnail() ) :	
-      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-		endif;
-    ?>
-	<header class="entry-header" style="background-image: url('<?php echo $thumb['0'];?>')">
   
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -25,8 +19,9 @@ get_header(); ?>
 
 	<div class="entry-content">
     <h2> Our Story </h2>
-  <?php echo CFS ()->get(' out_story' );?>
-  echo CFS()->get( 'our_team' );
+  <?php echo CFS()->get( 'our_story' );?>
+	  <h2> Our Team </h2>
+  <?php echo CFS()->get( 'our_team' );?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
