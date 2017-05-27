@@ -68,29 +68,22 @@ get_header(); ?>
 <h4>Latest Adventures</h4>
 <section class="adventure container">
   <?php $args = array(
-    // 'order' => 'ASC',
+    'order' => 'ASC',
     'numberposts' => 4,
     'post_type' => 'adventure',
   );?>
-  <?php $adventure_posts = get_posts( $args ); // returns an array of posts?>
   <?php $adventure_counter = 1;?>
+  <?php $adventure_posts = get_posts( $args ); // returns an array of posts?>
   <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post );?>
-    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-    <?php if ( $adventure_counter = 2 ) {
+    <?php if ( $adventure_counter == 2 ) {
       echo '<div class="flex-2to4">';
-    } elseif ( $adventure_counter = 3 ) {
+    } elseif ( $adventure_counter == 3 ) {
       echo '<div class="flex-3to4">';
     } ?>
 
-    <div class="single-adventure">
-      <?php echo $adventure_counter ?>
-      <div class="image-container" style="background-image: url('<?php echo $thumb['0'];?>')">
-      </div>
-      <p>
-        <?php echo get_the_time( "j F Y", $post->ID) ?> 
-        / 
-        <?php echo $post->comment_count; ?> Comments
-      </p>
+    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+    
+    <div class="single-adventure-<?php echo $adventure_counter;?>" style="background-image: url('<?php echo $thumb['0'];?>')">
       <a href="<?php echo $post->guid; ?>">
         <h2><?php echo $post->post_title; ?></h2>
       </a>
@@ -100,11 +93,11 @@ get_header(); ?>
         </a>
       </div>
     </div>
-    <?php if ( $adventure_counter = 4 ) {
+
+    <?php if ( $adventure_counter == 4 ) {
       echo '</div></div>';
     } ?>
-    
-  <?php $adventure_counter++; ?> 
+    <?php $adventure_counter++; ?>
   <?php endforeach; ?>
   <?php wp_reset_postdata(); ?>
 </section>

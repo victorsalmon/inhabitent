@@ -124,7 +124,42 @@
         text-transform: uppercase;
       }
     }
+  }
+  //The Adventures Section
+  .single-adventure-1, .single-adventure-2, .single-adventure-3, .single-adventure-4{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
 
-    //The Adventures Section
+    h2{
+      position: absolute;
+      padding: $base__space-unit/2;
+    }
+    .blk-btn{
+      position: absolute;
+      padding: $base__space-unit/2;
+    }
+  }
+  .single-adventure-1{
+    height: auto;
+    width: 45%;
+    margin: $base__space-unit;
+  }
+  .single-adventure-2{
+    width: 100%;
+    margin: $base__space-unit 0;
+  }
+  .single-adventure-3{
+    margin-right: $base__space-unit;
+  }
+  .flex-2to4{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-3to4{
+    padding-bottom: $base__space-unit;
+    display: flex;
   }
 }

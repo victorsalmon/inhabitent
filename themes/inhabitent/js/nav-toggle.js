@@ -10,8 +10,7 @@ console.log ('hi');
     });
 
     $('.search-field').on('blur', function() {
-      $('.search-field').animate({width:'toggle'}, 200);
-      $('.search-field').css('display', 'none');
+      $('.search-field').animate({width:'toggle'}, 0);
 
     });
 

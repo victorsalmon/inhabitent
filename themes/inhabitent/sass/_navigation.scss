@@ -55,7 +55,7 @@ fieldset{
 	display:none;
 	overflow: hidden;
 	transition: all 0.2s;
-	width: 0;
+	width: 0px;
 }
 .search-field:focus{
 	width: 200px;
@@ -69,73 +69,75 @@ fieldset{
 	justify-content: space-between;
 	height: 3rem;
 	width: 100%;
-	.menu-main-menu-container {
+	.search-nav-wrap{
 		display: flex;
-		align-items: center;
-	}
-	ul {
-		display: flex;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-		justify-content: space-around;
-		li {
-			margin: 0 $base__space-unit/2;
-			font-family: 'novecentosanswide';
-			text-transform: uppercase;
+		.menu-main-menu-container {
+			display: flex;
+			align-items: center;
 		}
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: fixed;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
-
-			ul {
-				left: -999rem;
-				top: 0;
-			}
-
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+			justify-content: space-around;
 			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
+				margin: 0 $base__space-unit/2;
+				font-family: 'novecentosanswide';
+				text-transform: uppercase;
+			}
+			ul {
+				box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+				float: left;
+				position: fixed;
+				top: $base__space-unit;
+				left: -999rem;
+				z-index: 99999;
+
+				ul {
+					left: -999rem;
+					top: 0;
 				}
+
+				li {
+					&:hover > ul,
+					&.focus > ul {
+						left: 100%;
+					}
+				}
+
+				a {
+					width: 200px;
+				}
+
+				// :hover > a,
+				// .focus > a {
+				// }
+
+				// a:hover,
+				// a.focus {
+				// }
 			}
 
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
+			li:hover > ul,
+			li.focus > ul {
+				left: auto;
 			}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
+		li {
+			position: relative;
+			// &:hover > a,
+			// &.focus > a {
+			// }
 		}
-	}
-	li {
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
+		a {
+			text-decoration: none;
 		}
-	}
-	a {
-		text-decoration: none;
-	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
+		// .current_page_item > a,
+		// .current-menu-item > a,
+		// .current_page_ancestor > a {
+		// }
 	}
 }
 
