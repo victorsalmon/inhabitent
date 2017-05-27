@@ -41,7 +41,6 @@
     }
 }
 //Product Small Single
-
 .product-image{
   border: $border__width solid $border__color-solid;
   border-bottom-width: 5px;
@@ -55,8 +54,11 @@
   border: $border__width solid $border__color-solid;
 }
 
-
-//Single-Product
-.dots { 
-  background: url('../../images/dot.gif') repeat-x bottom; 
-}
+    //Dot Leaders
+  .dots{
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .dots:after{
+    content: "........................";
+  }

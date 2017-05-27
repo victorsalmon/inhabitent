@@ -544,21 +544,14 @@ fieldset {
   border: 0; }
 
 .search-field {
-  transition: right 0.2s;
-  position: absolute;
-  top: 0;
-  right: -15rem; }
+  display: none;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 0; }
 
 .search-field:focus {
-  transition: right 0.2s;
-  position: relative;
-  top: 0;
-  right: 0; }
-
-input[type=search].show {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0.5rem;
-  width: 12rem; }
+  width: 200px;
+  transition: all 0.2s; }
 
 /* General Navigation Menu Styles */
 .main-navigation {
@@ -1089,4 +1082,8 @@ object {
   border: 1px solid #e1e1e1; }
 
 .dots {
-  background: url("../../images/dot.gif") repeat-x bottom; }
+  white-space: nowrap;
+  overflow: hidden; }
+
+.dots:after {
+  content: "........................"; }

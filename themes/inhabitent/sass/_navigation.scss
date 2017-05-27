@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+//Div-wrap and flex nav bar
+//JavaScript Nav bar
+//content-product-small dot leader styling
+
 //Green tent and Green Nav Bar
 .main-navigation{
 	border-bottom: $border__width solid $border__color-solid;
@@ -47,21 +52,14 @@ fieldset{
   border: 0;
 }
 .search-field{
-	transition: right 0.2s;
-	position: absolute;
-	top: 0;
-	right: -15rem;
+	display:none;
+	overflow: hidden;
+	transition: all 0.2s;
+	width: 0;
 }
 .search-field:focus{
-	transition: right 0.2s;
-	position: relative;
-	top: 0;
-	right: 0;
-}
-input[type=search].show {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0.5rem;
-  width: 12rem;
+	width: 200px;
+	transition: all 0.2s;
 }
 
 /* General Navigation Menu Styles */

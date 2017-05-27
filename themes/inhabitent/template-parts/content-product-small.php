@@ -16,8 +16,7 @@
   <?php endif; ?>
     
   <div class="product-meta">
-    <?php the_title(); ?>
-    <span class="dots"></span>
+    <span class="dots"><?php the_title(); ?></span>
     <?php echo CFS()->get( 'price' ); ?>
   </div>
 </div><!-- .entry-content -->
