@@ -1107,7 +1107,7 @@ object {
   .product-gallery .entry-content {
     margin: 0.75rem;
     width: 22%;
-    min-width: 200px; }
+    min-width: 250px; }
 
 .product-image {
   border: 1px solid #e1e1e1;
@@ -1123,13 +1123,8 @@ object {
 .product-meta {
   border: 1px solid #e1e1e1;
   display: -ms-flexbox;
-  display: flex;
-  max-height: 1rem;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  display: flex; }
   .product-meta .dots {
-    white-space: nowrap;
     overflow: hidden;
-    max-width: 80px; }
-  .product-meta .dots:after {
-    content: "....................."; }
+    -ms-flex: 1;
+        flex: 1; }

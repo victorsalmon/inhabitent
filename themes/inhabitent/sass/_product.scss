@@ -42,7 +42,7 @@
     .entry-content{
       margin: $base__space-unit/2;
       width: 22%;
-      min-width: 200px;
+      min-width: 250px;
     }
 }
 //Product Small Single
@@ -58,16 +58,10 @@
 .product-meta{
   border: $border__width solid $border__color-solid;
   display: flex;
-  max-height: 1rem;
-  justify-content: space-between;
 
     //Dot Leaders
   .dots{
-    white-space: nowrap;
     overflow: hidden;
-    max-width: 80px;
-  }
-  .dots:after{
-    content: ".....................";
+    flex: 1;
   }
 }

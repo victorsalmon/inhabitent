@@ -1,8 +1,5 @@
-console.log ('hi');
-
 (function($){
   $(document).ready(function(){
-
 
     $('.open-the-search-form').on('click', function() {
       $('.search-field').animate({width:'toggle'}, 0);
@@ -19,9 +16,9 @@ console.log ('hi');
       var windowHeight = $('.hero').height();
       var posEndScroll = Math.round( $(window).scrollTop() );
       if (posEndScroll >= windowHeight){
-        $('.site-navigation').removeClass('custom-nav');
+        $('.main-navigation').removeClass('custom-nav');
       } else {
-        $('.site-navigation').addClass('custom-nav');
+        $('.main-navigation').addClass('custom-nav');
       }
     });
 

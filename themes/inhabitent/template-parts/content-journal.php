@@ -15,8 +15,11 @@
 		endif;
     ?>
 	<header class="entry-header" style="background-image: url('<?php echo $thumb;?>')">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if (is_home()) : ?>
+			<a href="<?php echo get_permalink(get_the_ID());?>"> 
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</a>
+		<?php endif;?>
 
 		<div class="entry-meta">
 			<?php inhabitent_posted_on(); ?> / <?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?> / <?php inhabitent_posted_by(); ?>

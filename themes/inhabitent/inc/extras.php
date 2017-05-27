@@ -21,6 +21,15 @@ function inhabitent_change_query_count_16 ($query){
 }
 add_action('pre_get_posts', 'inhabitent_change_query_count_16');
 
+function inhabitent_change_order_products ($query){
+    if( ! is_admin() && is_main_query() && is_tax() ) {
+        $query->set('posts_per_page', '4');
+				$query->set('orderby', 'title');
+				$query->set('order', 'asc');
+    }
+}
+add_action('pre_get_posts', 'inhabitent_change_order_products');
+
 
 function inhabitent_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
