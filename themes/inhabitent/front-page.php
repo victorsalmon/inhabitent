@@ -83,7 +83,7 @@ get_header(); ?>
 
     <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
     
-    <div class="single-adventure-<?php echo $adventure_counter;?>" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url('<?php echo $thumb['0'];?>')">
+    <div class="single-adventure-<?php echo $adventure_counter;?>" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, .35) 100%), url('<?php echo $thumb['0'];?>')">
       <a href="<?php echo $post->guid; ?>">
         <h2><?php echo $post->post_title; ?></h2>
       </a>

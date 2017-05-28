@@ -118,38 +118,38 @@
 
   //The Adventures Section
   .single-adventure-1, .single-adventure-2, .single-adventure-3, .single-adventure-4{
-    position: relative;
     background-position: center;
     background-size: cover;
-    height: 200px;
+    height: 16rem;
+    position: relative;
+    width: 90%;
     h2{
       font-family: 'merriweather';
       font-weight: 400;
-      top: -$base__space-unit/2;
-      padding: $base__space-unit/2;
+      line-height: 1.25;
+      padding: 0 $base__space-unit;
     }
     .blk-btn{
       border-color: white;
+      margin-left: $base__space-unit/2;
       padding: $base__space-unit/2;
+      position: relative;
       a{
         color: white;
       }
     }
   }
   .single-adventure-1{
-    height: auto;
-    width: 60%;
+    height: 33.5rem;;
     margin-right: $base__space-unit;
-    margin-bottom: $base__space-unit;
     h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
   }
   .single-adventure-2{
     margin-bottom: $base__space-unit;
-    width: 100%;
     h2{
-      font-size: 2rem;
+      font-size: 2.5rem;
 
     }
   }
@@ -157,8 +157,7 @@
     margin-right: $base__space-unit;
   }
   .single-adventure-3, .single-adventure-4{
-    font-size: 0.85rem;
-    width: 50%;
+    font-size: 1.2rem;
   }
   .flex-2to4{
     display: flex;
