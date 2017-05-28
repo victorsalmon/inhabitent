@@ -386,6 +386,22 @@ big {
 .blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover {
   color: white; }
 
+.grn-btn, .comment-form .form-submit .submit {
+  background-color: #248A83;
+  box-shadow: none;
+  color: white;
+  font-family: 'novecentosanswide';
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.375rem 1.5rem;
+  text-shadow: none; }
+  .grn-btn:hover, .comment-form .form-submit .submit:hover {
+    background-color: #19625d; }
+
+.comment-form .form-submit .submit {
+  margin-bottom: 3rem;
+  padding: 0.75rem 1.5rem; }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -687,10 +703,6 @@ fieldset {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.site-footer {
-  background-image: url("../../images/dark-wood.png");
-  background-size: cover; }
-
 .container-footer {
   display: -ms-flexbox;
   display: flex;
@@ -716,12 +728,15 @@ fieldset {
     font-size: 1.2rem;
     width: 25px; }
 
-.site-footer .container-footer h3 {
-  color: #d99054;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-transform: uppercase; }
+.site-footer {
+  background-image: url("../../images/dark-wood.png");
+  background-size: cover; }
+  .site-footer .container-footer h3 {
+    color: #d99054;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .copyright {
   color: white;
@@ -753,6 +768,60 @@ body {
 .main-navigation {
   max-width: 1120px; }
 
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+.comment-reply-title {
+  margin-top: 0.75rem; }
+
+.comments-area {
+  margin-right: 1.5rem; }
+  .comments-area h3 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .comments-area .comment-form label {
+    font-family: "novecentosanswide";
+    font-size: 1.1rem;
+    text-transform: uppercase; }
+  .comments-area .comment-form textarea, .comments-area .comment-form input {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1; }
+  .comments-area .comment-form .required {
+    color: #d99054; }
+  .comments-area .comment-form-author, .comments-area .comment-form-email {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 49.2%; }
+    .comments-area .comment-form-author label, .comments-area .comment-form-email label {
+      display: block; }
+    .comments-area .comment-form-author input, .comments-area .comment-form-email input {
+      width: 100%; }
+  .comments-area .comment-form-author {
+    margin-right: 0.5%; }
+  .comments-area .comment-form-url input {
+    width: 100%; }
+
+/* Social Media Buttons */
+.social-buttons .blk-btn {
+  background-color: white;
+  border-radius: 0;
+  bottom: 3rem;
+  box-shadow: none;
+  display: inline-block;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  width: auto; }
+  .social-buttons .blk-btn:hover {
+    background-color: #248A83; }
+  .social-buttons .blk-btn i {
+    margin-right: 10px; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -780,13 +849,6 @@ body {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Media
@@ -865,6 +927,9 @@ object {
   border-left: 1px solid #e1e1e1;
   margin: 0 0 0 1.5rem;
   padding: 1.5rem 0 1.5rem 3rem; }
+  .widget-area aside h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase; }
   .widget-area a {
     color: #248A83; }
     .widget-area a:hover {
@@ -880,15 +945,6 @@ object {
     list-style: none;
     margin: 0;
     padding: 0; }
-
-.grn-btn {
-  background-color: #248A83;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0.375rem 1.5rem; }
-  .grn-btn:hover {
-    background-color: #19625d; }
 
 .home .blk-btn {
   color: black; }
@@ -1049,7 +1105,7 @@ object {
   background-position: center;
   height: 525px;
   margin-top: 3rem;
-  margin-right: 1.5rem;
+  margin-right: 2.25rem;
   overflow: hidden;
   position: relative; }
   .entry-header .entry-meta, .entry-header .entry-title {
@@ -1063,14 +1119,20 @@ object {
     line-height: 2.5rem;
     padding: 0.75rem 1.5rem;
     top: 0.75rem;
-    width: 75%; }
+    width: 74%; }
   .entry-header .entry-meta {
     bottom: 0;
     line-height: 2.25;
     font-size: 0.85rem;
     right: 0;
     text-align: center;
-    width: 55%; }
+    width: 53%; }
+
+.blog .entry-content .blk-btn {
+  left: 0; }
+
+.blog .site-main {
+  margin-bottom: 6.5rem; }
 
 .entry-footer .cat-links, .entry-footer .tags-links {
   font-family: 'novecentosanswide';
@@ -1151,3 +1213,40 @@ object {
     overflow: hidden;
     -ms-flex: 1;
         flex: 1; }
+
+.single-product article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 3rem; }
+
+.single-product .product-image {
+  background-position: center;
+  background-size: cover;
+  border-bottom-width: 1px;
+  height: 450px;
+  width: 49%; }
+
+.single-product .entry-content {
+  margin-top: 0;
+  width: 45%; }
+
+.single-product h1 {
+  color: #d99054;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+.single-product .price {
+  font-family: 'novecentosanswide';
+  font-size: 1.8rem; }
+
+.single-product .social-buttons {
+  position: relative; }
+  .single-product .social-buttons .blk-btn {
+    position: relative;
+    top: 0; }

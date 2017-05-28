@@ -1,15 +1,4 @@
 //Front Page SCSS
-.grn-btn{
-  background-color: $color__brand-green;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-  padding: $base__space-unit/4 $base__space-unit;
-  &:hover{
-    background-color: $color__brand-green-dark;
-  }
-}
-
 .home {
   .blk-btn{
     color: black;

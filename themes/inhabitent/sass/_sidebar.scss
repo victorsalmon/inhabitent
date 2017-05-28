@@ -15,6 +15,12 @@
   border-left: $border__width solid $border__color-solid;
   margin: 0 0 0 $base__space-unit;
   padding: $base__space-unit 0 $base__space-unit 2*$base__space-unit;
+  aside{
+    h2{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
   a {
     color: $color__brand-green;
     &:hover{

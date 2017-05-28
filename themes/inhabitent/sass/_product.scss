@@ -76,3 +76,44 @@
     flex: 1;
   }
 }
+
+//Single-Product Styles
+.single-product{
+  article{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 2*$base__space-unit;
+  }
+  .product-image{
+    background-position: center;
+    background-size: cover;
+    border-bottom-width: 1px;
+    height: 450px;
+    width: 49%;
+  }
+  .entry-content{
+    margin-top: 0;
+    width: 45%;
+  }
+  h1{
+    color: $color__brand-orange;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .price {
+    font-family: 'novecentosanswide';
+    font-size: 1.8rem;
+  }
+  .social-buttons{
+    position: relative;
+    .blk-btn{
+      position: relative;
+      top: 0;
+
+    }
+  }
+}

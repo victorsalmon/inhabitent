@@ -1,2 +1,47 @@
+//Single Journal Post (.single-post)
+.type-post{
+  position: relative;
+}
+.entry-header{
+  background-size: cover;
+  background-position: center;
+  height: 525px;
+  margin-top: 2*$base__space-unit;
+  margin-right: 3/2*$base__space-unit;
+  overflow: hidden;
+  position: relative;
+  .entry-meta, .entry-title{
+    color: white;
+    background-color: $color__brand-green;
+    position: absolute;
+    text-transform: uppercase;
+  }
+  .entry-title {
+    font-size: 2.1rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    padding: $base__space-unit/2 $base__space-unit;
+    top: $base__space-unit/2;
+    width: 74%;
+  }
+  .entry-meta {
+    bottom: 0;
+    line-height: 2.25;
+    font-size: 0.85rem;
+    right: 0;
+    text-align: center;
+    width: 53%;
+  }
+}
 
-//All Styles for Single Journal Posts are in _single-post.scss
+//Journal Blog Styles Only
+.blog{
+  .entry-content{
+    .blk-btn{
+      left: 0;
+    }
+  }
+  .site-main{
+    margin-bottom: 6.5rem;
+  }
+}

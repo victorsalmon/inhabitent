@@ -10,6 +10,80 @@ body{
 	max-width: $res__max;
 }
 
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comment-reply-title{
+	margin-top: $base__space-unit/2;
+}
+.comments-area{
+	margin-right: $base__space-unit;
+	h3{
+		font-size: 1.8rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	.comment-form{
+		label {
+			font-family: "novecentosanswide";
+			font-size: 1.1rem;
+			text-transform: uppercase;
+		}
+		textarea, input{
+			background-color: #f4f4f4;
+			border: $border__width solid $border__color-solid;
+		}
+		.required{
+			color: $color__brand-orange;
+		}
+	}
+	.comment-form-author, .comment-form-email{
+		display: inline-block;
+		label{
+			display: block;
+		}
+		input{
+			width: 100%;
+		}
+		margin: 0;
+		padding: 0;
+		width: 49.2%;
+	}
+	.comment-form-author{
+		margin-right: 0.5%;
+	}
+	.comment-form-url{
+		input{
+			width: 100%;
+		}
+	}
+}
+/* Social Media Buttons */
+.social-buttons{
+	.blk-btn{
+		background-color: white;
+		border-radius: 0;
+		bottom: 2*$base__space-unit;
+		box-shadow: none;
+		display: inline-block;
+		left: 0;
+		padding: $base__space-unit/2 $base__space-unit;
+		width: auto;
+		&:hover{
+			background-color: $color__brand-green;
+		}
+		i{
+			 margin-right: 10px;
+		}
+	}
+}
+
+
 /* Posts and pages */
 .sticky {
 	display: block;
@@ -44,13 +118,4 @@ body{
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
-	display: block;
 }

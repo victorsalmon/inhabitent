@@ -2,10 +2,6 @@
 # Widgets
 --------------------------------------------------------------*/
 //Style Site-Footer, Sidebar/Widgetized Area 2
-.site-footer{
-	background-image: url("../../images/dark-wood.png");
-	background-size: cover;
-}
 .container-footer{
 	display: flex;
 	flex-wrap: wrap;
@@ -34,7 +30,10 @@
 	width: 25px;
 	}
 }
+
 .site-footer{
+	background-image: url("../../images/dark-wood.png");
+	background-size: cover;
 	.container-footer{
 		h3 {
 			color: $color__brand-orange;
@@ -45,6 +44,7 @@
 		}
 	}
 }
+
 .copyright {
 	color: white;
 	font-family: 'novecentosanswide';

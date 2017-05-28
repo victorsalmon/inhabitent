@@ -32,6 +32,24 @@
 	}
 }
 
+.grn-btn, .comment-form .form-submit .submit{
+  background-color: $color__brand-green;
+	box-shadow: none;
+  color: white;
+	font-family: 'novecentosanswide';
+  font-size: 1rem;
+  font-weight: 400;
+  padding: $base__space-unit/4 $base__space-unit;
+	text-shadow: none;
+  &:hover{
+    background-color: $color__brand-green-dark;
+  }
+}
+.comment-form .form-submit .submit{
+	margin-bottom: 2*$base__space-unit;
+	padding: $base__space-unit/2 $base__space-unit;
+}
+
 html {
 	box-sizing: border-box;
 	@include font-size(1);
