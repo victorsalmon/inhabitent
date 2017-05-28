@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /* Nav Bar is in _navigation.scss*/
 .site-content {
-  padding-top: 2.5rem; }
+  padding-top: 3rem; }
 
 .main-navigation {
   border-bottom: 1px solid #e1e1e1; }
@@ -516,13 +516,13 @@ textarea {
   z-index: 10; }
   .main-navigation .logo-tent {
     background-size: contain;
-    height: 29px;
+    height: 35px;
     margin: 0.35rem;
-    width: 42px;
+    width: 50px;
     background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
   .main-navigation a {
     color: #248A83;
-    font-size: 0.8rem; }
+    font-size: 1rem; }
     .main-navigation a:visited {
       color: #248A83; }
 
@@ -550,7 +550,7 @@ fieldset {
   margin-left: auto;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  height: 2.5rem;
+  height: 3rem;
   width: 100%; }
   .main-navigation .search-nav-wrap {
     display: -ms-flexbox;
@@ -701,7 +701,8 @@ fieldset {
     max-width: 225px;
     margin: 0 auto; }
   .container-footer aside.widget {
-    padding-right: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     -ms-flex: 1 1 0px;
         flex: 1 1 0;
     min-width: 225px; }
@@ -745,6 +746,13 @@ fieldset {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+body {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.main-navigation {
+  max-width: 1120px; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -1073,18 +1081,23 @@ object {
 
 .gallery-header h1 {
   font-size: 2.5rem;
+  margin-bottom: 0.6rem;
   padding-top: 0.50rem;
   text-align: center;
   text-transform: uppercase; }
 
-.gallery-header .taxonomy-description p {
-  text-align: center; }
+.gallery-header .taxonomy-description {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem; }
+  .gallery-header .taxonomy-description p {
+    text-align: center; }
 
 .gallery-header h3 {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0 1.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   text-transform: uppercase; }
 
 .product-types {
@@ -1105,11 +1118,17 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding-bottom: 6rem; }
   .product-gallery .entry-content {
     margin: 0.75rem;
     width: 22%;
     min-width: 250px; }
+  .product-gallery .entry-content:nth-child(4n) {
+    margin-right: 0; }
+  .product-gallery .entry-content:nth-child(4n+1) {
+    margin-left: 0; }
 
 .product-image {
   border: 1px solid #e1e1e1;

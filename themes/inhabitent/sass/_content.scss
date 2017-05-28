@@ -1,9 +1,16 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+//Max Width of Page
+body{
+	max-width: $res__max;
+	margin: 0 auto;
+}
+.main-navigation{
+	max-width: $res__max;
+}
 
 /* Posts and pages */
-
 .sticky {
 	display: block;
 }

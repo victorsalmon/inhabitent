@@ -15,7 +15,8 @@
 		margin: 0 auto;
 	}
 	aside.widget{
-		padding-right: 2*$base__space-unit;
+		padding-right: $base__space-unit;
+		padding-left: $base__space-unit;
 		flex: 1 1 0;
 		min-width: 225px;
 	}

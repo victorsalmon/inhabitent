@@ -14,14 +14,14 @@
 	z-index: 10;
 	.logo-tent {
 		background-size: contain; 
-		height: 29px;
+		height: 35px;
 		margin: 0.35rem;
-		width: 42px;
+		width: 50px;
 		background-image: url("../../images/logos/inhabitent-logo-tent.svg");
 	}
 	a{
 		color: $color__brand-green;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		&:visited {
 			color: $color__brand-green;
 		}
