@@ -32,8 +32,6 @@
 					</div>
 
 				</nav><!-- #site-navigation -->
-
-				<!--Code for search goes here-->
 				
 			</header><!-- #masthead -->
 

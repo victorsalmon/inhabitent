@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /* Nav Bar is in _navigation.scss*/
 .site-content {
-  padding-top: 3rem; }
+  padding-top: 2.5rem; }
 
 .main-navigation {
   border-bottom: 1px solid #e1e1e1; }
@@ -517,12 +517,13 @@ textarea {
   z-index: 10; }
   .main-navigation .logo-tent {
     background-size: contain;
-    height: 35px;
+    height: 29px;
     margin: 0.35rem;
-    width: 50px;
+    width: 42px;
     background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
   .main-navigation a {
-    color: #248A83; }
+    color: #248A83;
+    font-size: 0.8rem; }
     .main-navigation a:visited {
       color: #248A83; }
 
@@ -536,6 +537,10 @@ fieldset {
   width: 0px; }
 
 .search-field:focus {
+  border: none;
+  font-family: 'novecentosanswide';
+  font-size: .85rem;
+  outline: 0;
   width: 200px;
   transition: all 0.2s; }
 
@@ -546,7 +551,7 @@ fieldset {
   margin-left: auto;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  height: 3rem;
+  height: 2.5rem;
   width: 100%; }
   .main-navigation .search-nav-wrap {
     display: -ms-flexbox;

@@ -14,13 +14,14 @@
 	z-index: 10;
 	.logo-tent {
 		background-size: contain; 
-		height: 35px;
+		height: 29px;
 		margin: 0.35rem;
-		width: 50px;
+		width: 42px;
 		background-image: url("../../images/logos/inhabitent-logo-tent.svg");
 	}
 	a{
 		color: $color__brand-green;
+		font-size: 0.8rem;
 		&:visited {
 			color: $color__brand-green;
 		}
@@ -55,6 +56,10 @@ fieldset{
 	width: 0px;
 }
 .search-field:focus{
+	border: none;
+	font-family: 'novecentosanswide';
+	font-size: .85rem;
+	outline: 0;
 	width: 200px;
 	transition: all 0.2s;
 }
@@ -64,7 +69,7 @@ fieldset{
 	display: flex;
 	margin-left: auto;
 	justify-content: space-between;
-	height: 3rem;
+	height: $base__space-nav;
 	width: 100%;
 	.search-nav-wrap{
 		display: flex;

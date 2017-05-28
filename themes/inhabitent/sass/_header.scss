@@ -1,6 +1,6 @@
 /* Nav Bar is in _navigation.scss*/
 .site-content { //for nav bar
-  padding-top: 3rem;
+  padding-top: $base__space-nav;
 }
 .main-navigation {
 	border-bottom: $border__width solid $border__color-solid;
