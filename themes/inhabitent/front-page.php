@@ -23,7 +23,7 @@ get_header(); ?>
               <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $product_type->slug; ?>.svg">
               <span class="description"><?php echo $product_type->description;?></h3></span>
               <a href="<?php echo get_term_link($product_type);?>">
-                <h3><?php echo $product_type->name;?> Stuff</h3>
+                <h3 class="grn-btn"><?php echo $product_type->name;?> Stuff</h3>
               </a>
             </div>
           <?php endforeach; ?>
@@ -83,7 +83,7 @@ get_header(); ?>
 
     <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
     
-    <div class="single-adventure-<?php echo $adventure_counter;?>" style="background-image: url('<?php echo $thumb['0'];?>')">
+    <div class="single-adventure-<?php echo $adventure_counter;?>" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url('<?php echo $thumb['0'];?>')">
       <a href="<?php echo $post->guid; ?>">
         <h2><?php echo $post->post_title; ?></h2>
       </a>
@@ -101,6 +101,10 @@ get_header(); ?>
   <?php endforeach; ?>
   <?php wp_reset_postdata(); ?>
 </section>
+
+  <a href="<?php echo get_site_url();?>">
+    <h3 class="grn-btn adventures">More Adventures</h3>
+  </a>
 
 
 

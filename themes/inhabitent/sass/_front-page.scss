@@ -1,4 +1,15 @@
 //Front Page SCSS
+.grn-btn{
+  background-color: $color__brand-green;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: $base__space-unit/4 $base__space-unit;
+  &:hover{
+    background-color: $color__brand-green-dark;
+  }
+}
+
 .home {
   //Links and Nav
   a{
@@ -15,9 +26,6 @@
       }
     }
   }
-	.main-navigation {
-		position: absolute;
-	}
 	.site-content{
     display: block;
 		padding-top: 0;
@@ -34,6 +42,7 @@
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url("../../images/home-hero.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
     .logo-full {
@@ -80,16 +89,6 @@
     .description{
       margin: 0 $base__space-unit/2;
     }
-    h3{
-      background-color: $color__brand-green;
-      color: white;
-      font-size: 1rem;
-      font-weight: 400;
-      padding: $base__space-unit/4 $base__space-unit;
-      &:hover{
-        background-color: $color__brand-green-dark;
-      }
-    }
   }
 
   //The Inhabitent Journal Section
@@ -100,7 +99,7 @@
     .image-container{
       background-position: center;
       background-size: cover;
-      height: 250px;
+      height: 200px;
     }
     .single-journal {
       border: $border__width solid $border__color-solid;
@@ -125,34 +124,50 @@
       }
     }
   }
+
   //The Adventures Section
   .single-adventure-1, .single-adventure-2, .single-adventure-3, .single-adventure-4{
-    height: 250px;
-    width: 200px;
     position: relative;
     background-position: center;
     background-size: cover;
-
+    height: 200px;
     h2{
-      position: absolute;
+      font-family: 'merriweather';
+      font-weight: 400;
+      top: -$base__space-unit/2;
       padding: $base__space-unit/2;
     }
     .blk-btn{
-      position: absolute;
+      border-color: white;
       padding: $base__space-unit/2;
+      a{
+        color: white;
+      }
     }
   }
   .single-adventure-1{
     height: auto;
-    width: 45%;
-    margin: $base__space-unit;
+    width: 60%;
+    margin-right: $base__space-unit;
+    margin-bottom: $base__space-unit;
+    h2 {
+      font-size: 2.5rem;
+    }
   }
   .single-adventure-2{
+    margin-bottom: $base__space-unit;
     width: 100%;
-    margin: $base__space-unit 0;
+    h2{
+      font-size: 2rem;
+
+    }
   }
   .single-adventure-3{
     margin-right: $base__space-unit;
+  }
+  .single-adventure-3, .single-adventure-4{
+    font-size: 0.85rem;
+    width: 50%;
   }
   .flex-2to4{
     display: flex;
@@ -161,5 +176,11 @@
   .flex-3to4{
     padding-bottom: $base__space-unit;
     display: flex;
+  }
+  .grn-btn.adventures{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 12rem;
   }
 }
