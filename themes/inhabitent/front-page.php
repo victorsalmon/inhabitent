@@ -54,8 +54,8 @@ get_header(); ?>
         <a href="<?php echo $post->guid; ?>">
           <h2><?php echo $post->post_title; ?></h2>
         </a>
-        <div class="blk-btn">
-          <a href="<?php echo $post->guid; ?>">
+        <div>
+          <a class="blk-btn" href="<?php echo $post->guid; ?>">
             <span>Read Entry</span>
           </a>
         </div>

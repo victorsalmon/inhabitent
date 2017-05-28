@@ -11,19 +11,10 @@
 }
 
 .home {
-  //Links and Nav
-  a{
-	color: white;
-		&:visited{
-			color: white;
-		}
-	}
   .blk-btn{
-    a{
-      color: black;
-      &:hover{
-        color: white;
-      }
+    color: black;
+    &:hover{
+      color: white;
     }
   }
 	.site-content{

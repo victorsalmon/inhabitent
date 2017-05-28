@@ -361,7 +361,7 @@ big {
   -ms-flex-align: center;
       align-items: center;
   bottom: 0.75rem;
-  border: 1px solid black;
+  color: black;
   display: -ms-flexbox;
   display: flex;
   font-size: .9rem;
@@ -369,22 +369,21 @@ big {
   height: 2.5rem;
   -ms-flex-pack: center;
       justify-content: center;
+  text-transform: uppercase;
+  position: absolute;
   left: 0.75rem;
   padding: 0.75rem 0.75rem;
-  position: absolute;
-  text-transform: uppercase;
+  border: 1px solid black;
   width: 9rem; }
-
-.blk-btn:hover {
-  background-color: #248A83; }
-  .blk-btn:hover a {
+  .blk-btn:hover {
+    background-color: #248A83;
     color: white; }
 
-.single-adventure .blk-btn, .blog .blk-btn, .single-post .blk-btn, .tax-product-type .blk-btn {
+.blog .blk-btn, .single-post .blk-btn, .tax-product-type .blk-btn {
   position: relative;
   color: black; }
 
-.single-adventure .blk-btn:hover, .blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover {
+.blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover {
   color: white; }
 
 html {
@@ -883,14 +882,9 @@ object {
   .grn-btn:hover {
     background-color: #19625d; }
 
-.home a {
-  color: white; }
-  .home a:visited {
-    color: white; }
-
-.home .blk-btn a {
+.home .blk-btn {
   color: black; }
-  .home .blk-btn a:hover {
+  .home .blk-btn:hover {
     color: white; }
 
 .home .site-content {
