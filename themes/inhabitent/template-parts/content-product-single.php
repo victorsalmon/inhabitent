@@ -31,9 +31,5 @@
 		<?php inhabitent_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
-	<?php  foreach (get_comments() as $comment): ?>
-			<div><?php echo $comment->comment_author; ?> said: "<?php echo $comment->comment_content; ?>".</div>
-			<?php endforeach; ?>
-	<?php comments_template(); ?>      
 	
 </article><!-- #post-## -->

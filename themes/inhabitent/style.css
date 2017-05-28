@@ -768,7 +768,31 @@ body {
 .main-navigation {
   max-width: 1120px; }
 
-/* Comments */
+/* Comments Displayed */
+.comment .comment-body {
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment .comment-author-avatar {
+  padding-right: 1.5rem; }
+
+.comment .fn {
+  font-weight: 700;
+  font-style: normal; }
+
+.comment time {
+  color: #a1a1a1; }
+
+.comment a {
+  color: #248A83; }
+  .comment a:hover {
+    color: #19625d; }
+
+.comment .comment-body {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1.5rem; }
+
+/* Comment Form */
 .comment-content a {
   word-wrap: break-word; }
 
