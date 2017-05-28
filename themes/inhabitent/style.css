@@ -714,7 +714,6 @@ fieldset {
     margin: 0 auto; }
   .container-footer aside.widget {
     padding-right: 1.5rem;
-    padding-left: 1.5rem;
     -ms-flex: 1 1 0px;
         flex: 1 1 0;
     min-width: 225px; }
@@ -783,14 +782,14 @@ body {
 .comment time {
   color: #a1a1a1; }
 
-.comment a {
-  color: #248A83; }
-  .comment a:hover {
-    color: #19625d; }
-
 .comment .comment-body {
   border-bottom: 1px solid #e1e1e1;
   padding: 1.5rem; }
+
+.comment a, .comment-respond a {
+  color: #248A83; }
+  .comment a:hover, .comment-respond a:hover {
+    color: #19625d; }
 
 /* Comment Form */
 .comment-content a {
@@ -1274,3 +1273,7 @@ object {
   .single-product .social-buttons .blk-btn {
     position: relative;
     top: 0; }
+
+.page-template-page-about .site-content {
+  display: block;
+  padding-top: 0; }

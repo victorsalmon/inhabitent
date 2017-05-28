@@ -25,15 +25,17 @@ body{
 	time {
 		color: $color__brand-grey-light;
 	}
+	.comment-body{
+		border-bottom: $border__width solid $border__color-solid;
+		padding: $base__space-unit;
+	}
+}
+.comment, .comment-respond{
 	a {
 		color: $color__brand-green;
 		&:hover{
 			color: $color__brand-green-dark;
 		}
-	}
-	.comment-body{
-		border-bottom: $border__width solid $border__color-solid;
-		padding: $base__space-unit;
 	}
 }
 
