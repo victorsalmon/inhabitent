@@ -2,12 +2,12 @@
   $(document).ready(function(){
 
     $('.open-the-search-form').on('click', function() {
-      $('.search-field').animate({width:'toggle'}, 0);
-      $('.search-field').focus();      
+      $('.main-navigation .search-field').animate({width:'toggle'}, 0);
+      $('.main-navigation .search-field').focus();      
     });
 
-    $('.search-field').on('blur', function() {
-      $('.search-field').animate({width:'toggle'}, 0);
+    $('.main-navigation .search-field').on('blur', function() {
+      $('.main-navigation .search-field').animate({width:'toggle'}, 0);
 
     });
 

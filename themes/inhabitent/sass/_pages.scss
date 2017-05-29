@@ -1,9 +1,107 @@
 	//About Page
 .page-template-page-about{
   .site-content{
+    padding: 0;
+  }
+  .entry-header{
     display: block;
     height: 100vh;
 		margin: 0;
+    .entry-title{
+      background: none;
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 45vh;
+      width: 100%;
+    }
+  }
+  .entry-content{
+    margin: 2*$base__space-unit auto;
+    max-width: 800px;
+    h2{
+      color: $color__brand-purple;
+      letter-spacing: 2px;
+      font-size: 2.25rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}
+
+//404 Page
+.error404{
+  ul{
+    margin: 0;
     padding: 0;
-	}
+  }
+  li{
+    list-style: none;
+  }
+  h1{
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding-top: 0.67rem;
+    text-transform: uppercase;
+  }
+  h2{
+    text-transform: uppercase;
+  }
+  .page-content{
+    margin-bottom: 4*$base__space-unit;
+    a {
+      color: $color__brand-green;
+      &:hover{
+        color: $color__brand-green-dark;
+      }
+    }
+    i{
+      display:none;
+    }
+    .search-field{
+      background: $color__background-search;
+      display: inline-block;
+      font-family: 'merriweather';
+      text-transform: lowercase;
+      padding: 0.3rem;
+      width: 15rem;
+    }    
+  }
+}
+.page-id-8{
+  header{
+    height: 3rem;
+  }
+  .site-content{
+    padding-top: 0;
+  }
+  .widget-area{
+    margin-top: $base__space-unit;
+  }
+  .entry-header{
+    margin-top: 2*$base__space-unit;
+    overflow: visible;
+    .entry-title{
+      background: none;
+      color: $color__text-main;
+      font-size: 2.5rem;
+      line-height: 1.25rem;
+      margin-top: $base__space-unit;
+      padding: 0;
+      top:0;
+    }
+  }
+  .our-map{
+    height: 310px;
+    margin-top: $base__space-unit;
+  }
+  .entry-content{
+    h2 {
+      color: $color__brand-purple;
+      font-size: 2.1rem;
+      margin: $base__space-unit/4 0;
+      text-transform: uppercase;
+    }
+  }
 }

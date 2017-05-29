@@ -132,7 +132,7 @@ add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
 function inhabitent_about_img_update (){
 	if (is_page_template( 'page-about.php' )){
 		$thumb_url = CFS ()->get( 'hero_image' );
-		$custom_style = ".entry-header {background-image: url('" . $thumb_url . "')}";
+		$custom_style = ".entry-header {background-image: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('" . $thumb_url . "')}";
 		wp_add_inline_style( 'inhabitent-style', $custom_style );
 	}
 }

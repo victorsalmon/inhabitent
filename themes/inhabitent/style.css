@@ -379,11 +379,11 @@ big {
     background-color: #248A83;
     color: white; }
 
-.blog .blk-btn, .single-post .blk-btn, .tax-product-type .blk-btn {
+.blog .blk-btn, .single-post .blk-btn, .tax-product-type .blk-btn, .archive .blk-btn, .category .blk-btn {
   position: relative;
   color: black; }
 
-.blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover {
+.blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover, .archive .blk-btn:hover, .category .blk-btn:hover {
   color: white; }
 
 .grn-btn, .comment-form .form-submit .submit {
@@ -1275,5 +1275,90 @@ object {
     top: 0; }
 
 .page-template-page-about .site-content {
+  padding: 0; }
+
+.page-template-page-about .entry-header {
   display: block;
+  height: 100vh;
+  margin: 0; }
+  .page-template-page-about .entry-header .entry-title {
+    background: none;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 45vh;
+    width: 100%; }
+
+.page-template-page-about .entry-content {
+  margin: 3rem auto;
+  max-width: 800px; }
+  .page-template-page-about .entry-content h2 {
+    color: #2f1339;
+    letter-spacing: 2px;
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0; }
+
+.error404 ul {
+  margin: 0;
+  padding: 0; }
+
+.error404 li {
+  list-style: none; }
+
+.error404 h1 {
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  padding-top: 0.67rem;
+  text-transform: uppercase; }
+
+.error404 h2 {
+  text-transform: uppercase; }
+
+.error404 .page-content {
+  margin-bottom: 6rem; }
+  .error404 .page-content a {
+    color: #248A83; }
+    .error404 .page-content a:hover {
+      color: #19625d; }
+  .error404 .page-content i {
+    display: none; }
+  .error404 .page-content .search-field {
+    background: #f4f4f4;
+    display: inline-block;
+    font-family: 'merriweather';
+    text-transform: lowercase;
+    padding: 0.3rem;
+    width: 15rem; }
+
+.page-id-8 header {
+  height: 3rem; }
+
+.page-id-8 .site-content {
   padding-top: 0; }
+
+.page-id-8 .widget-area {
+  margin-top: 1.5rem; }
+
+.page-id-8 .entry-header {
+  margin-top: 3rem;
+  overflow: visible; }
+  .page-id-8 .entry-header .entry-title {
+    background: none;
+    color: #404040;
+    font-size: 2.5rem;
+    line-height: 1.25rem;
+    margin-top: 1.5rem;
+    padding: 0;
+    top: 0; }
+
+.page-id-8 .our-map {
+  height: 310px;
+  margin-top: 1.5rem; }
+
+.page-id-8 .entry-content h2 {
+  color: #2f1339;
+  font-size: 2.1rem;
+  margin: 0.375rem 0;
+  text-transform: uppercase; }
