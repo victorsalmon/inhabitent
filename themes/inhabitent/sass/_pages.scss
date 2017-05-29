@@ -104,4 +104,25 @@
       text-transform: uppercase;
     }
   }
+
+  //Style Contact Form
+  .wpcf7-form-control{
+    background: $color__background-search;
+    border-color: $border__color-solid;
+    border-radius: 0;
+  }
+  .required{
+    color: $color__brand-orange;
+  }
+  .wpcf7-form label{
+    font-family: 'novecentosanswide';
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+  .wpcf7-submit{
+    line-height: 1.5rem;
+    margin-bottom: 4*$base__space-unit;
+    padding: $base__space-unit/2 $base__space-unit;
+  }
 }

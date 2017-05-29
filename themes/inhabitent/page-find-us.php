@@ -19,17 +19,12 @@ get_header(); ?>
 			</iframe>
 
 			<div class="entry-content">
-				<?php echo get_the_content();?>
-				<h2>We take camping very seriously.</h2>
-				<p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
-				<h2>Send us email!</h2>
-				[contact-form-7 id="231" title="Contact Us Form"]
-			</div><!-- .entry-content -->
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-		<div>
-
-		</div>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+					the_content();
+					endwhile; else: ?>
+					<p>Sorry, no posts matched your criteria.</p>
+				<?php endif; ?>
+			</div>
 		</article><!-- #post-## -->
 	</main><!-- #main -->
 </div><!-- #primary -->

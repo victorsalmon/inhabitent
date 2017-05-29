@@ -138,6 +138,14 @@ function inhabitent_about_img_update (){
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_update' );
 
+/**
+* Allow shortcodes in Contact Form 7
+*/
+function shortcodes_in_cf7( $form ) {
+$form = do_shortcode( $form );
+return $form;
+}
+add_filter( 'wpcf7_form_elements', 'shortcodes_in_cf7' );
 
 function inhabitent_archive_title($title)
 {

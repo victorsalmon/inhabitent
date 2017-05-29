@@ -386,7 +386,7 @@ big {
 .blog .blk-btn:hover, .single-post .blk-btn:hover, .tax-product-type .blk-btn:hover, .archive .blk-btn:hover, .category .blk-btn:hover {
   color: white; }
 
-.grn-btn, .comment-form .form-submit .submit {
+.grn-btn, .comment-form .form-submit .submit, .page-id-8 .wpcf7-form-control.wpcf7-submit {
   background-color: #248A83;
   box-shadow: none;
   color: white;
@@ -395,7 +395,7 @@ big {
   font-weight: 400;
   padding: 0.375rem 1.5rem;
   text-shadow: none; }
-  .grn-btn:hover, .comment-form .form-submit .submit:hover {
+  .grn-btn:hover, .comment-form .form-submit .submit:hover, .page-id-8 .wpcf7-form-control.wpcf7-submit:hover {
     background-color: #19625d; }
 
 .comment-form .form-submit .submit {
@@ -1362,3 +1362,22 @@ object {
   font-size: 2.1rem;
   margin: 0.375rem 0;
   text-transform: uppercase; }
+
+.page-id-8 .wpcf7-form-control {
+  background: #f4f4f4;
+  border-color: #e1e1e1;
+  border-radius: 0; }
+
+.page-id-8 .required {
+  color: #d99054; }
+
+.page-id-8 .wpcf7-form label {
+  font-family: 'novecentosanswide';
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase; }
+
+.page-id-8 .wpcf7-submit {
+  line-height: 1.5rem;
+  margin-bottom: 6rem;
+  padding: 0.75rem 1.5rem; }
