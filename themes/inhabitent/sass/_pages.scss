@@ -126,3 +126,24 @@
     padding: $base__space-unit/2 $base__space-unit;
   }
 }
+
+//Search Page
+.content-area.search{
+  .page-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  .entry-title{
+    background: none;
+    margin: 0;
+    padding: 0;
+    a{
+      color: $color__brand-green;
+      font-size: 2.25rem;
+      line-height: 1.25rem;
+      &:hover{
+        color: $color__brand-purple;
+      }
+    }
+  }
+}
