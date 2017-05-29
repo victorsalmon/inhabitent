@@ -1382,17 +1382,33 @@ object {
   margin-bottom: 6rem;
   padding: 0.75rem 1.5rem; }
 
-.content-area.search .page-title {
+.search .page-title {
+  border-bottom: 1px solid #e1e1e1;
   font-size: 2.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 3rem;
   text-transform: uppercase; }
 
-.content-area.search .entry-title {
+.search .entry-header {
+  height: 3rem; }
+
+.search .entry-title {
   background: none;
   margin: 0;
   padding: 0; }
-  .content-area.search .entry-title a {
+  .search .entry-title a {
     color: #248A83;
     font-size: 2.25rem;
     line-height: 1.25rem; }
-    .content-area.search .entry-title a:hover {
+    .search .entry-title a:hover {
       color: #2f1339; }
+
+.search .entry-summary a {
+  color: black; }
+
+.search .blk-btn {
+  position: relative; }
+
+.search main {
+  padding-bottom: 6rem; }

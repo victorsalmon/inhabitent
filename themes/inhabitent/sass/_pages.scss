@@ -128,10 +128,17 @@
 }
 
 //Search Page
-.content-area.search{
+.search{
   .page-title {
+    border-bottom: $border__width solid $border__color-solid;
     font-size: 2.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 3rem;
     text-transform: uppercase;
+  }
+  .entry-header{
+    height: 3rem;
   }
   .entry-title{
     background: none;
@@ -145,5 +152,16 @@
         color: $color__brand-purple;
       }
     }
+  }
+  .entry-summary{
+    a{
+      color: black;
+    }
+  }
+  .blk-btn{
+    position: relative;
+  }
+  main{
+    padding-bottom: 4*$base__space-unit;
   }
 }
