@@ -19,6 +19,7 @@ get_header(); ?>
 			</iframe>
 
 			<div class="entry-content">
+				<?php echo get_the_content();?>
 				<h2>We take camping very seriously.</h2>
 				<p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
 				<h2>Send us email!</h2>
