@@ -5,6 +5,7 @@
 .container-footer{
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: $base__space-unit;
 	padding-top: 3rem;
 	img{
 		max-width: 225px;

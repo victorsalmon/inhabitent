@@ -18,7 +18,7 @@ get_header(); ?>
   <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post );?>
 
     <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-    <div class="single-adventure" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, .35) 100%), url('<?php echo $thumb['0'];?>')">
+    <div class="single-adventure-panel" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, .35) 100%), url('<?php echo $thumb['0'];?>')">
       <a href="<?php echo $post->guid; ?>">
         <h2><?php echo $post->post_title; ?></h2>
       </a>

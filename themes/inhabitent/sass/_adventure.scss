@@ -11,7 +11,7 @@
     text-align: center;
     text-transform: uppercase;
   }
-  .single-adventure{
+  .single-adventure-panel{
     background-size: cover;
     background-position: center;
     margin-bottom: 2%;
@@ -49,7 +49,7 @@
 .adventure-template-default{
   .product-image{
     border: none;
-    height: 70vh;
+    height: 60vh;
   }
   .entry-title{
     font-size: 2.5rem;
@@ -61,5 +61,14 @@
     font-family: 'novecentosanswide';
     font-size: 1.1rem;
     text-transform: uppercase;
+  }
+  .blk-btn{
+    bottom: auto;
+    left: auto;
+    position: relative;
+  }
+  .entry-content{
+    margin-left: $base__space-unit;
+    margin-right: $base__space-unit;
   }
 }
