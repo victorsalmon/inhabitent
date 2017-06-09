@@ -12,6 +12,7 @@
     });
 
     //Scrolling
+    $('.main-navigation').addClass('custom-nav');
     $(window).on('scroll', function(){
       var windowHeight = $('.hero').height();
       var posEndScroll = Math.round( $(window).scrollTop() );
