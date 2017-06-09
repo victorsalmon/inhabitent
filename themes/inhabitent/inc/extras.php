@@ -12,23 +12,23 @@
  * @return array
  */
 
-function inhabitent_change_query_count_16 ($query){
+function inhabitent_product_query_count_16 ($query){
     if( ! is_admin() && is_main_query() && is_post_type_archive( 'product' ) ) {
         $query->set('posts_per_page', '16');
 				$query->set('orderby', 'title');
 				$query->set('order', 'asc');
     }
 }
-add_action('pre_get_posts', 'inhabitent_change_query_count_16');
+add_action('pre_get_posts', 'inhabitent_product_query_count_16');
 
-function inhabitent_change_order_products ($query){
+function inhabitent_products_order ($query){
     if( ! is_admin() && is_main_query() && is_tax() ) {
         $query->set('posts_per_page', '4');
 				$query->set('orderby', 'title');
 				$query->set('order', 'asc');
     }
 }
-add_action('pre_get_posts', 'inhabitent_change_order_products');
+add_action('pre_get_posts', 'inhabitent_products_order');
 
 
 function inhabitent_body_classes( $classes ) {

@@ -42,18 +42,12 @@
 .product-gallery {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 6rem;
     .entry-content{
       margin: $base__space-unit/2;
       width: 22%;
       min-width: 250px;
-    }
-    .entry-content:nth-child(4n){
-      margin-right:0;
-    }
-    .entry-content:nth-child(4n+1){
-      margin-left:0;
     }
 }
 //Product Small Single

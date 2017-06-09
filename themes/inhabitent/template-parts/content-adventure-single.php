@@ -1,0 +1,33 @@
+<?php
+/**
+ * Template part for displaying single adventures.
+ *
+ * @package Inhabitent_Theme
+ */
+?>
+	<!--<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+	<header class="entry-header" style="background-image: url('<?php echo $thumb['0'];?>')">-->
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	<?php if ( has_post_thumbnail() ) :	
+		$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+		$thumb = $thumb['0'];
+	endif; ?>
+	<div class="product-image" style="background-image: url('<?php echo $thumb;?>')">
+	</div>
+	
+	<div class="entry-content">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <?php inhabitent_posted_by(); ?>
+		<?php the_content(); ?>
+		<?php get_template_part( 'template-parts/content', 'social-buttons' ); ?>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<?php inhabitent_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+
+	
+</article><!-- #post-## -->

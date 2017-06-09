@@ -102,7 +102,7 @@ get_header(); ?>
   <?php wp_reset_postdata(); ?>
 </section>
 
-  <a href="<?php echo get_site_url();?>">
+  <a href="<?php echo get_site_url() . '/adventure';?>">
     <h3 class="grn-btn adventures">More Adventures</h3>
   </a>
 

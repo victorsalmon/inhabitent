@@ -708,7 +708,7 @@ fieldset {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 4rem; }
+  padding-top: 3rem; }
   .container-footer img {
     max-width: 225px;
     margin: 0 auto; }
@@ -761,11 +761,11 @@ fieldset {
 # Content
 --------------------------------------------------------------*/
 body {
-  max-width: 1120px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .main-navigation {
-  max-width: 1120px; }
+  max-width: 1100px; }
 
 /* Comments Displayed */
 .comment .comment-body {
@@ -1072,7 +1072,7 @@ object {
   background-size: cover;
   height: 16rem;
   position: relative;
-  width: 90%; }
+  width: 100%; }
   .home .single-adventure-1 h2, .home .single-adventure-2 h2, .home .single-adventure-3 h2, .home .single-adventure-4 h2 {
     font-family: 'merriweather';
     font-weight: 400;
@@ -1205,17 +1205,13 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 6rem; }
   .product-gallery .entry-content {
     margin: 0.75rem;
     width: 22%;
     min-width: 250px; }
-  .product-gallery .entry-content:nth-child(4n) {
-    margin-right: 0; }
-  .product-gallery .entry-content:nth-child(4n+1) {
-    margin-left: 0; }
 
 .product-image {
   border: 1px solid #e1e1e1;
@@ -1412,3 +1408,62 @@ object {
 
 .search main {
   padding-bottom: 6rem; }
+
+.post-type-archive-adventure .site-content {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.post-type-archive-adventure h4 {
+  border-bottom: 1px dashed #c8c8c8;
+  font-size: 2.5rem;
+  margin-top: 2.25rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.post-type-archive-adventure .single-adventure {
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2%;
+  height: 500px;
+  width: 49%; }
+  .post-type-archive-adventure .single-adventure a {
+    color: white;
+    text-decoration: none; }
+  .post-type-archive-adventure .single-adventure h2 {
+    display: inline-block;
+    font-family: 'merriweather';
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 5%;
+    width: 90%; }
+  .post-type-archive-adventure .single-adventure .blk-btn {
+    border-color: white;
+    margin-top: 3rem; }
+
+.adventure-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 7.5rem; }
+
+.adventure-template-default .product-image {
+  border: none;
+  height: 70vh; }
+
+.adventure-template-default .entry-title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 3rem;
+  text-transform: uppercase; }
+
+.adventure-template-default .byline {
+  font-family: 'novecentosanswide';
+  font-size: 1.1rem;
+  text-transform: uppercase; }
