@@ -1,10 +1,10 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-
 //Div-wrap and flex nav bar
 //JavaScript Nav bar
 //content-product-small dot leader styling
+
 
 //Green tent and Green Nav Bar
 .main-navigation{
@@ -27,30 +27,32 @@
 		}
 	}
 }
+
+
 // White Nav Bar
-// .custom-nav.main-navigation{
-// 	border-bottom: 0;
-// 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255,255,255, 0) 0%);
-// 	position: relative;
-// 	.logo-tent { //White Logo and Bar
-// 		background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
-// 	}
-// 	.menu-main-menu-container {
-// 		a{
-// 			color:white;
-// 		}
-// 	}
-// 	.open-the-search-form {
-// 	color: white;
-// 	}
-// }
-  //.home nav
-  // a{
-	// color: white;
-	// 	&:visited{
-	// 		color: white;
-	// 	}
-	// }
+.custom-nav.main-navigation{
+	border-bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255,255,255, 0) 0%);
+	position: fixed;
+	.logo-tent { //White Logo and Bar
+		background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+	}
+	.menu-main-menu-container {
+		a{
+			color:white;
+		}
+	}
+	.open-the-search-form {
+	color: white;
+	}
+}
+  nav a{
+	color: white;
+		&:visited{
+			color: white;
+		}
+	}
+
 
 //Pop-out Search Bar
 fieldset{
@@ -70,6 +72,7 @@ fieldset{
 	width: 200px;
 	transition: all 0.2s;
 }
+
 
 /* General Navigation Menu Styles */
 .main-navigation {
