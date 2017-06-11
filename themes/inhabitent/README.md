@@ -11,3 +11,52 @@ All theme-independent style was bundled into a functionality plugin to preserve 
 Custom Nav Bar
 Search Animation
 Skip Link Accessibility
+
+Front Page
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/front%20-%20pop%20out%20search%20bar.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/front%20-%20shop%20stuff.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/front%20-%20journal.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/front-adventures.png
+
+
+Adventures
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/adventure%20-%20archive.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/adventure%20-%20single%20footer.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/adventure%20-%20single%20nav.png
+
+
+
+Journal
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/journal%20-%20archive.png
+
+
+  Comments
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/journal%20-%20comments.png
+
+  Comment Form
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/journal%20-%20comment%20form.png
+
+
+Shop
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/product%20-%20archive.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/product%20-%20single.png
+
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/product%20type%20-%20archive.png
+
+
+
+Pages
+
+About Page
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/pages%20-%20about.png
+
+Find Us
+https://raw.githubusercontent.com/victorsalmon/inhabitent/master/themes/inhabitent/readme/pages%20-%20find-us.png
+
+
