@@ -43,9 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 /* Nav Bar is in _navigation.scss*/
-.site-content {
-  padding-top: 3rem; }
-
 .main-navigation {
   border-bottom: 1px solid #e1e1e1; }
 
@@ -526,7 +523,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .main-navigation {
-  border-bottom: 1px solid #e1e1e1;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
   position: fixed;
   z-index: 10; }
@@ -557,6 +553,13 @@ nav a {
   color: white; }
   nav a:visited {
     color: white; }
+
+.page-template-page-about .site-content, .home .site-content {
+  max-width: initial;
+  padding: 0; }
+
+.page-template-page-about .site-header, .home .site-header {
+  padding: 0; }
 
 fieldset {
   border: 0; }
@@ -777,12 +780,16 @@ fieldset {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-body {
+.site-content, .main-navigation, .container-footer, .copyright {
   max-width: 1100px;
   margin: 0 auto; }
 
-.main-navigation {
-  max-width: 1100px; }
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 3rem; }
 
 /* Comments Displayed */
 .comment .comment-body {
@@ -993,7 +1000,12 @@ object {
 
 .home .site-content {
   display: block;
+  max-width: initial;
   padding-top: 0; }
+
+.home .container {
+  margin: 0 auto;
+  max-width: 1100px; }
 
 .home .site-branding {
   display: none; }
@@ -1134,6 +1146,7 @@ object {
 .home .grn-btn.adventures {
   font-size: 0.9rem;
   font-weight: 400;
+  margin-bottom: 4rem;
   text-transform: uppercase;
   width: 12rem; }
 
@@ -1287,9 +1300,6 @@ object {
     position: relative;
     top: 0; }
 
-.page-template-page-about .site-content {
-  padding: 0; }
-
 .page-template-page-about .entry-header {
   display: block;
   height: 100vh;
@@ -1303,7 +1313,7 @@ object {
 
 .page-template-page-about .entry-content {
   margin: 3rem auto;
-  max-width: 800px; }
+  max-width: 1100px; }
   .page-template-page-about .entry-content h2 {
     color: #2f1339;
     letter-spacing: 2px;

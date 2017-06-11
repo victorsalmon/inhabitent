@@ -6,10 +6,16 @@
       color: white;
     }
   }
-	.site-content{
+  .site-content{
     display: block;
-		padding-top: 0;
-	}
+    max-width: initial;
+    padding-top: 0;
+  }
+
+  .container{
+    margin: 0 auto;
+    max-width: $res__max;
+  }
   .site-branding {
     display: none;
   }
@@ -159,6 +165,7 @@
   .grn-btn.adventures{
     font-size: 0.9rem;
     font-weight: 400;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     width: 12rem;
   }

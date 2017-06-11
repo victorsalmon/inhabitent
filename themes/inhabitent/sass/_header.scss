@@ -1,13 +1,10 @@
 /* Nav Bar is in _navigation.scss*/
 .site-content { //for nav bar
-  padding-top: $base__space-nav;
+  // padding-top: $base__space-nav;
 }
 .main-navigation {
 	border-bottom: $border__width solid $border__color-solid;
 }
-
-
-
 //Invisible accessible menu toggle that becomes visible on focus
 .menu-toggle{
   position: absolute;

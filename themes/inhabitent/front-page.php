@@ -101,11 +101,11 @@ get_header(); ?>
   <?php endforeach; ?>
   <?php wp_reset_postdata(); ?>
 </section>
-
+<section class="container">
   <a href="<?php echo get_site_url() . '/adventure';?>">
     <h3 class="grn-btn adventures">More Adventures</h3>
   </a>
-
+</section>
 
 
 

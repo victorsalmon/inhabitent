@@ -1,12 +1,9 @@
 	//About Page
-.page-template-page-about{
-  .site-content{
-    padding: 0;
-  }
+.page-template-page-about {
   .entry-header{
     display: block;
     height: 100vh;
-		margin: 0;
+    margin: 0;
     .entry-title{
       background: none;
       font-size: 3rem;
@@ -17,7 +14,7 @@
   }
   .entry-content{
     margin: 2*$base__space-unit auto;
-    max-width: 800px;
+    max-width: $res__max;
     h2{
       color: $color__brand-purple;
       letter-spacing: 2px;
@@ -28,7 +25,6 @@
     }
   }
 }
-
 //404 Page
 .error404{
   ul{
