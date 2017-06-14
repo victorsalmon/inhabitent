@@ -1480,6 +1480,9 @@ object {
       justify-content: space-between;
   margin-bottom: 7.5rem; }
 
+.adventure-template-default .site-header {
+  padding-bottom: 0; }
+
 .adventure-template-default .product-image {
   border: none;
   height: 60vh; }

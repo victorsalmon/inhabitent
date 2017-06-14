@@ -20,25 +20,26 @@
 //     $('.home header, .page-template-about header').removeClass('site-header');
 
     //Scrolling
+    var $body = $('body');
+    var $mnav = $('main-navigation');
     if (
-      $('body').hasClass('page-template-page-about') ||
-      $('body').hasClass('home') ||
-      $('body').hasClass('single-adventure') ){
+      $body.hasClass('page-template-page-about') ||
+      $body.hasClass('home') ||
+      $body.hasClass('single-adventure') ){
         $('.main-navigation').addClass('custom-nav');
-        $('.site-content').css("padding-top", "0");
+        $('.site-content').css('padding-top', '0');
         $(window).on('scroll', function(){
             var a = $('.hero').height(),
                 b = $('.product-image').height(),
                 c = $('.page-template-page-about .entry-header').height(),
                 windowHeight = Math.max(a, b, c);
-            console.log (a, b, c, windowHeight);
             
           var posEndScroll = Math.round( $(window).scrollTop() );
           if (posEndScroll >= windowHeight){
-            $('.main-navigation').removeClass('custom-nav');
+            $mnav.removeClass('custom-nav');
           } else {
-            $('.main-navigation').addClass('custom-nav');
-            $('.site-content').css("padding-top", "0");
+            $mnav.addClass('custom-nav');
+            $('.site-content').css('padding-top', '0');
           }
         })
     }
